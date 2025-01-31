@@ -58,3 +58,65 @@
 - [Cours de géomatique 2](https://www.youtube.com/@EsriBeLux/videos)
 
 - [Cours de géomatique 3](https://www.youtube.com/@formationsigminesstatistiq6602/videos)
+
+## Références spatiales
+
+- [Spatial Reference](https://spatialreference.org/)
+
+- [DoGeo](https://blog.dogeo.fr/)
+
+- [Ressources E.S.R.I.](https://education.esrifrance.fr/)
+
+## Outils de calcul
+
+- [Coordonnées G.P.S.](https://www.coordonnees-gps.fr/)
+
+- [DistanceFromTo](https://www.distancefromto.net/)
+
+- [Conversion de coordonnées](https://tool-online.com/)
+
+## Jeux de données
+
+- [EducTice](http://eductice.ens-lyon.fr/EducTice/recherche/geomatique/veille/sig/Jeux-de-donnees)
+
+- [*Global Administrative Area*](https://gadm.org/)
+
+- [Organisation des Nations Unies pour l'alimentation et l'agriculture](https://data.apps.fao.org/?lang=fr)
+
+- [Observatoire des territoires](https://www.observatoire-des-territoires.gouv.fr/outils/cartographie-interactive/#c=indicator&view=map9)
+
+- [M.I.T. Libraries](https://libguides.mit.edu/c.php?g=176295&p=1161384#s-lg-box-wrapper-4119227)
+
+- [ArcGIS Hub - World Cities](https://hub.arcgis.com/datasets/6996f03a1b364dbab4008d99380370ed_0/explore)
+
+- [OpenRailwayMap](https://www.openrailwaymap.org/)
+
+- [S.I.G. Cables](https://www.sigcables.com/index.php/cableliste/liste_complete/OPE_NOM/DESC)
+
+- [Cartographie(s) numérique(s)](https://cartonumerique.blogspot.com/p/les-donnees.html)
+
+- [Free GIS Data](https://freegisdata.rtwilson.com/)
+
+- [](https://www.arcgis.com/home/webmap/viewer.html?url=https://services.arcgis.com/ue9rwulIoeLEI9bj/ArcGIS/rest/services/SilkRoad_KidsFair2015/FeatureServer/1&source=sd)
+
+- [ArcGIS - Silk Road](https://www.arcgis.com/home/webmap/viewer.html?url=https://services.arcgis.com/ue9rwulIoeLEI9bj/ArcGIS/rest/services/SilkRoad_KidsFair2015/FeatureServer/1&source=sd)
+
+- [Données de l'I.N.S.E.E.](http://www.progedo-adisp.fr/enquetes_donloc.php)
+
+- [Cartographie statistique](https://www.cartostat.eu/)
+
+- [OpenStreetMap](https://www.openhistoricalmap.org/#map=5/51.500/-0.100&layers=O&date=1866&daterange=1800,2022)
+
+- [Fédération nationale des agences d'urbanisme (F.N.A.U.)](https://fnau.org/centre-ville/carte_interactive_07022023/)
+
+- [Géo2France](https://www.geo2france.fr/portail/actualites/geopicardie-et-ppige-deviennent-geo2france)
+
+- [B.D.N.B. Open Data](https://bdnb.io/download/)
+
+- [data.gouv](https://www.data.gouv.fr/fr/)
+
+## Logiciels et langages de programmation
+
+- [Plugins Q-GIS](https://plugins.qgis.org/plugins/)
+
+- [ArcGIS et Python](https://pro.arcgis.com/fr/pro-app/latest/help/analysis/geoprocessing/basics/python-and-geoprocessing.htm)
