@@ -115,6 +115,8 @@
 
 - [data.gouv](https://www.data.gouv.fr/fr/)
 
+- [Infoterre (B.R.G.M.)](https://infoterre.brgm.fr/viewer/MainTileForward.do)
+
 ## Logiciels et langages de programmation
 
 - [Plugins Q-GIS](https://plugins.qgis.org/plugins/)
