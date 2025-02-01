@@ -97,7 +97,7 @@
 
 - [Free GIS Data](https://freegisdata.rtwilson.com/)
 
-- [](https://www.arcgis.com/home/webmap/viewer.html?url=https://services.arcgis.com/ue9rwulIoeLEI9bj/ArcGIS/rest/services/SilkRoad_KidsFair2015/FeatureServer/1&source=sd)
+- [ArcGIS](https://www.arcgis.com/home/webmap/viewer.html?url=https://services.arcgis.com/ue9rwulIoeLEI9bj/ArcGIS/rest/services/SilkRoad_KidsFair2015/FeatureServer/1&source=sd)
 
 - [ArcGIS - Silk Road](https://www.arcgis.com/home/webmap/viewer.html?url=https://services.arcgis.com/ue9rwulIoeLEI9bj/ArcGIS/rest/services/SilkRoad_KidsFair2015/FeatureServer/1&source=sd)
 
@@ -122,3 +122,97 @@
 - [Plugins Q-GIS](https://plugins.qgis.org/plugins/)
 
 - [ArcGIS et Python](https://pro.arcgis.com/fr/pro-app/latest/help/analysis/geoprocessing/basics/python-and-geoprocessing.htm)
+
+## Prise en main de [`ArcGIS Online`](https://fl-su.maps.arcgis.com/home/index.html)
+
+Après vous être connecté *via* votre compte, vous accédez à la page d'accueil.
+
+En haut, il y a huit onglets :
+1. Accueil
+2. Bibliothèque
+3. Carte
+4. Scène
+5. Notebook
+6. Groupes
+7. Contenu
+8. Organisation
+
+Tutoriel [« ArcGIS Online Premiers pas »](https://www.youtube.com/watch?v=DrUzt7eRL0I)
+
+### La bibliothèque
+
+La [bibliothèque](https://fl-su.maps.arcgis.com/home/gallery.html?sortField=relevance&sortOrder=desc) contient l'ensemble des données disponibles sur la plateforme.
+
+À gauche, un filtre permet de rechercher les données en fonction~:
+- du type d'élément ;
+	- Les principaux types que vous allez utiliser sont : *Maps* (cartes), *Layers* (couches) et *Data Stores*.
+- des catégories associées ;
+	- Les catégories sont à renseigner lorsque vous créez votre couche, carte, *etc*.
+- de la date de modification ;
+- de la localisation ;
+	- Elle permet de cibler un lieu précis.
+- des balises ;
+- du statut.
+
+### La carte
+
+La [carte](https://fl-su.maps.arcgis.com/apps/mapviewer/index.html) affiche une carte du monde centrée sur la France hexagonale.
+
+À gauche, vous avez disponible les outils permettant de gérer la visualisation que vous souhaitez.
+- Les couches
+	- S'il n'existe pas de couches, il est possible d'en ajouter :
+		- à partir d'un U.R.L. ;
+		- à partir d'un fichier, dont les formats disponibles sont :
+			- `*.csv`
+			- `*.geojson`
+			- `*.json`
+			- `*.kml`
+			- `*.kmz`
+			- `*.gpkg`
+			- `*.xls`
+			- `*.xlsx`
+			- `*.zip` qui sera utilisé pour lire les formats `*.shp`
+		- en créant une couche dessin. Cela consiste à dessiner directement sur la carte ;
+		- en créant une couche d'itinéraire ;
+		- en ajoutant une couche multimédia.
+- Les tables
+- Les fonds de carte. Par défaut, Topographie est choisi, mais il est possible d'en changer.
+- Les diagrammes permet de créer des statistiques à partir des données attributaires.
+- La légende
+- Les géosignets
+- Enregistrer sous / Nouvelle carte / Ouvrir une carte
+- Propriétés de la carte. Cela permet de gérer les métadonnées de la carte affichée.
+
+> [!TIP]
+> Vu la lenteur `ArcGIS Online`, si c'est possible, convertisser les données `*.shp` en un format plus léger comme `*.geojson`, `*.kml`, `*.kmz`, *etc*.
+
+### La scène
+
+La scène permet d'améliorer le *design* des cartes.
+
+En cliquant sur l'onglet, il faut choisir un thème, *Topographic* par exemple.
+
+À gauche, on retrouve les onglets de l'onglet Carte. En bas de ce menu, l'option Créer une application est disponible. Cela vous permet de créer un *story map*.
+
+À droite, la barre de menu permet d'améliorer le *design* de la carte avec de nombreuses options. 
+
+### Le *Notebook*
+
+Le *Notebook* donne accès aux outils de programmation `Python`.
+
+Sauf si vous savez coder en `Python`, l'usage de cet onglet est hors programme.
+
+### Les groupes, le contenu et l'organisation
+
+Les groupes, le contenu et l'organisation regroupent les informations concernant les utilisateurs et la licence.
+
+## Prise en main de `Q-GIS`
+
+
+
+
+
+
+
+
+
