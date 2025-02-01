@@ -1,0 +1,1 @@
+console.info("Page de test en JavaScript");
