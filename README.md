@@ -51,9 +51,9 @@ Le plan du cours a été compacté, car les séances du 1<sup>er</sup> et 8 mai 
 ### [Séance 12 - Évaluation finale](./Seance-12/Seance-12.md) [10/04/2025]
 
 > [!NOTE]
-> La remise du rapport est prévue pour le 9 mai 2025 au plus tard à l'adresse suivante : **maxime.forriez@sorbonne-universite.fr**.
-Le rapport **doit** être en format *.pdf. Je n'ai pas de traitement de texte installé sur ma machine, si vous m'envoyez un format *.docx. Je ne pourrai pas le lire, donc 0/20.
-Le rapport peut être envoyé par l'intermédiaire d'une plateforme comme WeTransfer.
+> - La remise du rapport est prévue pour le 9 mai 2025 au plus tard à l'adresse suivante : **maxime.forriez@sorbonne-universite.fr**.
+- Le rapport **doit** être en format *.pdf. Je n'ai pas de traitement de texte installé sur ma machine, si vous m'envoyez un format *.docx. Je ne pourrai pas le lire, donc 0/20.<br>
+- Le rapport peut être envoyé par l'intermédiaire d'une plateforme comme WeTransfer.
 
 > [!WARNING]
 > Cette unité de formation est intégralement évaluée en contrôle continue.
