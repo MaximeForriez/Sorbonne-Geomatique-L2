@@ -10,6 +10,8 @@
 
 **D.O.M.** : *Document Object Model*
 
+**E.C.M.A.** : *European Computer Manufacturers Association*
+
 **E.P.S.G.** : *European Petroleum Survey Group*
 
 **E.S.R.I.** : *Environmental Systems Research Institute*

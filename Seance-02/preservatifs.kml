@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="preservatifs" id="preservatifs">
+	<SimpleField name="annee_insta" type="string"></SimpleField>
+	<SimpleField name="site" type="string"></SimpleField>
+	<SimpleField name="adresse" type="string"></SimpleField>
+	<SimpleField name="arrond" type="string"></SimpleField>
+	<SimpleField name="adresse_com" type="string"></SimpleField>
+	<SimpleField name="acces" type="string"></SimpleField>
+	<SimpleField name="horaires_no" type="string"></SimpleField>
+	<SimpleField name="horaires_va" type="string"></SimpleField>
+	<SimpleField name="horaires_va_1" type="string"></SimpleField>
+</Schema>
+<Folder><name>preservatifs</name>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2008/2009</SimpleData>
+		<SimpleData name="site">Stade Jean Pierre Wimille</SimpleData>
+		<SimpleData name="adresse">56 Bd de l'Amiral Bruix</SimpleData>
+		<SimpleData name="arrond">75016</SimpleData>
+		<SimpleData name="adresse_com">56 Bd de l'Amiral Bruix 75016 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_no">7h Ã  22h30</SimpleData>
+		<SimpleData name="horaires_va">8h Ã  18h</SimpleData>
+		<SimpleData name="horaires_va_1">fermÃ©</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.275998,48.872568</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2008/2009</SimpleData>
+		<SimpleData name="site">Centre sportif Poissonniers</SimpleData>
+		<SimpleData name="adresse">2 rue Jean Cocteau</SimpleData>
+		<SimpleData name="arrond">75018</SimpleData>
+		<SimpleData name="adresse_com">2 rue Jean Cocteau 75018 Paris  France</SimpleData>
+		<SimpleData name="acces">ExtÃ©rieur</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.351833,48.899628</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2008/2009</SimpleData>
+		<SimpleData name="site">Centre sportif DÃ©jÃ©rine</SimpleData>
+		<SimpleData name="adresse">34 rue des docteurs DÃ©jÃ©rine</SimpleData>
+		<SimpleData name="arrond">75020</SimpleData>
+		<SimpleData name="adresse_com">34 rue des docteurs DÃ©jÃ©rine 75020 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_va_1">fermÃ©</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.411563,48.856795</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2010</SimpleData>
+		<SimpleData name="site">Kiosque jeunes Goutte D'Or</SimpleData>
+		<SimpleData name="adresse">1 rue Fleury Centre Musical</SimpleData>
+		<SimpleData name="arrond">75018</SimpleData>
+		<SimpleData name="adresse_com">1 rue Fleury Centre Musical 75018 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_va_1">fermÃ©</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.34463,48.89247</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2010</SimpleData>
+		<SimpleData name="site">Antenne jeunes Olympiades</SimpleData>
+		<SimpleData name="adresse">32 rue du Javelot Tour Anvers</SimpleData>
+		<SimpleData name="arrond">75013</SimpleData>
+		<SimpleData name="adresse_com">32 rue du Javelot Tour Anvers 75013 Paris  France</SimpleData>
+		<SimpleData name="acces">ExtÃ©rieur</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.365686,48.824405</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2010</SimpleData>
+		<SimpleData name="site">Espace jeunes Charles Hermitte</SimpleData>
+		<SimpleData name="adresse">54 Bd Ney</SimpleData>
+		<SimpleData name="arrond">75018</SimpleData>
+		<SimpleData name="adresse_com">54 Bd Ney 75018 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_no">10h Ã  20h</SimpleData>
+		<SimpleData name="horaires_va_1">10h Ã  20h</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.363065,48.898551</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2008/2009</SimpleData>
+		<SimpleData name="site">Centre sportif LÃ©o Lagrange</SimpleData>
+		<SimpleData name="adresse">68 Bd Poniatowsky</SimpleData>
+		<SimpleData name="arrond">75012</SimpleData>
+		<SimpleData name="adresse_com">68 Bd Poniatowsky 75012 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_no">8h Ã  22h</SimpleData>
+		<SimpleData name="horaires_va">8h Ã  21h</SimpleData>
+		<SimpleData name="horaires_va_1">8h Ã  17h</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.399533,48.832304</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2008/2009</SimpleData>
+		<SimpleData name="site">Centre sportif Jules NoÃ«l</SimpleData>
+		<SimpleData name="adresse">3 Av Maurice D'Ocagne</SimpleData>
+		<SimpleData name="arrond">75014</SimpleData>
+		<SimpleData name="adresse_com">3 Av Maurice D'Ocagne 75014 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_no">8h Ã  22h30</SimpleData>
+		<SimpleData name="horaires_va">8h Ã  22h</SimpleData>
+		<SimpleData name="horaires_va_1">9h Ã  22h30</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.315428,48.824199</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2008/2009</SimpleData>
+		<SimpleData name="site">Gymnase CÃ©vennes</SimpleData>
+		<SimpleData name="adresse">11 rue de la Montagne d'Aulas</SimpleData>
+		<SimpleData name="arrond">75015</SimpleData>
+		<SimpleData name="adresse_com">11 rue de la Montagne d'Aulas 75015 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_no">7h Ã  22h30</SimpleData>
+		<SimpleData name="horaires_va">8h Ã  16h</SimpleData>
+		<SimpleData name="horaires_va_1">7h Ã  19h</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.279085,48.840328</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2008/2009</SimpleData>
+		<SimpleData name="site">Centre sportif Max RousiÃ©</SimpleData>
+		<SimpleData name="adresse">28 rue AndrÃ© BrÃ©chet</SimpleData>
+		<SimpleData name="arrond">75017</SimpleData>
+		<SimpleData name="adresse_com">28 rue AndrÃ© BrÃ©chet 75017 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_no">8h Ã  21h30</SimpleData>
+		<SimpleData name="horaires_va">8h Ã  21h</SimpleData>
+		<SimpleData name="horaires_va_1">8h Ã  21h30</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.31863,48.88387</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2008/2009</SimpleData>
+		<SimpleData name="site">Gymnase Jean JaurÃ¨s</SimpleData>
+		<SimpleData name="adresse">87 Av J.JaurÃ¨s</SimpleData>
+		<SimpleData name="arrond">75019</SimpleData>
+		<SimpleData name="adresse_com">87 Av J.JaurÃ¨s 75019 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_no">7h Ã  22h30</SimpleData>
+		<SimpleData name="horaires_va">8h Ã  17h</SimpleData>
+		<SimpleData name="horaires_va_1">fermÃ©</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.38225,48.88237</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2010</SimpleData>
+		<SimpleData name="site">Kiosque jeunes Champ de Mars</SimpleData>
+		<SimpleData name="adresse">101 Quai Branly</SimpleData>
+		<SimpleData name="arrond">75015</SimpleData>
+		<SimpleData name="adresse_com">101 Quai Branly 75015 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_no">10h Ã  18h</SimpleData>
+		<SimpleData name="horaires_va">10h Ã  18h</SimpleData>
+		<SimpleData name="horaires_va_1">10h Ã  18h</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.289272,48.85494</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2010</SimpleData>
+		<SimpleData name="site">Antenne jeunes Flandre</SimpleData>
+		<SimpleData name="adresse">49 ter Av de Flandre</SimpleData>
+		<SimpleData name="arrond">75019</SimpleData>
+		<SimpleData name="adresse_com">49 ter Av de Flandre 75019 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_va">14h Ã  19h</SimpleData>
+		<SimpleData name="horaires_va_1">14h Ã  19h</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.372123,48.887047</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2010</SimpleData>
+		<SimpleData name="site">Centre d'animation VercingÃ©torix</SimpleData>
+		<SimpleData name="adresse">181/183 rue de VercingÃ©torix</SimpleData>
+		<SimpleData name="arrond">75014</SimpleData>
+		<SimpleData name="adresse_com">181/183 rue de VercingÃ©torix 75014 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_no">10h Ã  18h</SimpleData>
+		<SimpleData name="horaires_va">10h Ã  18h</SimpleData>
+		<SimpleData name="horaires_va_1">10h Ã  17h</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.309606,48.831535</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2010</SimpleData>
+		<SimpleData name="site">Espace jeunes Goutte D'Or</SimpleData>
+		<SimpleData name="adresse">6 rue de la Goutte d'Or</SimpleData>
+		<SimpleData name="arrond">75018</SimpleData>
+		<SimpleData name="adresse_com">6 rue de la Goutte d'Or 75018 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_no">14h Ã  21h</SimpleData>
+		<SimpleData name="horaires_va_1">14h Ã  21h</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.354645,48.884987</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2010</SimpleData>
+		<SimpleData name="site">Espace jeunes St Blaise</SimpleData>
+		<SimpleData name="adresse">1 rue Pauline Kergomard</SimpleData>
+		<SimpleData name="arrond">75020</SimpleData>
+		<SimpleData name="adresse_com">1 rue Pauline Kergomard 75020 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_no">10h30 Ã  19h</SimpleData>
+		<SimpleData name="horaires_va">14h Ã  19h</SimpleData>
+		<SimpleData name="horaires_va_1">14h Ã  19h</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.407303,48.854988</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2008/2009</SimpleData>
+		<SimpleData name="site">Centre sportif Grange aux belles</SimpleData>
+		<SimpleData name="adresse">17 rue Boy-Zelenski</SimpleData>
+		<SimpleData name="arrond">75010</SimpleData>
+		<SimpleData name="adresse_com">17 rue Boy-Zelenski 75010 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_no">8h Ã  22h30</SimpleData>
+		<SimpleData name="horaires_va">9h Ã  21h</SimpleData>
+		<SimpleData name="horaires_va_1">9h Ã  22h30</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.368197,48.877355</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2008/2009</SimpleData>
+		<SimpleData name="site">Centre sportif Bourneville</SimpleData>
+		<SimpleData name="adresse">5 rue du docteur Bourneville</SimpleData>
+		<SimpleData name="arrond">75013</SimpleData>
+		<SimpleData name="adresse_com">5 rue du docteur Bourneville 75013 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_no">7h Ã  22h30</SimpleData>
+		<SimpleData name="horaires_va_1">13h Ã  22h30</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.359162,48.817942</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2008/2009</SimpleData>
+		<SimpleData name="site">Centre sportif Georges Carpentier</SimpleData>
+		<SimpleData name="adresse">81 Bd MassÃ©na</SimpleData>
+		<SimpleData name="arrond">75013</SimpleData>
+		<SimpleData name="adresse_com">81 Bd MassÃ©na 75013 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_no">8h Ã  22h</SimpleData>
+		<SimpleData name="horaires_va">8h Ã  22h</SimpleData>
+		<SimpleData name="horaires_va_1">8h Ã  22h</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.366898,48.82046</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2008/2009</SimpleData>
+		<SimpleData name="site">Centre sportif Goutte d'Or</SimpleData>
+		<SimpleData name="adresse">10-12 passage de la Goutte d'Or</SimpleData>
+		<SimpleData name="arrond">75018</SimpleData>
+		<SimpleData name="adresse_com">10-12 passage de la Goutte d'Or 75018 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_no">7h Ã  22h30</SimpleData>
+		<SimpleData name="horaires_va">9h Ã  17h30</SimpleData>
+		<SimpleData name="horaires_va_1">8h Ã  18h</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.354328,48.884988</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2010</SimpleData>
+		<SimpleData name="site">Antenne jeunes Orillon</SimpleData>
+		<SimpleData name="adresse">43 rue de l'Orillon</SimpleData>
+		<SimpleData name="arrond">75011</SimpleData>
+		<SimpleData name="adresse_com">43 rue de l'Orillon 75011 Paris  France</SimpleData>
+		<SimpleData name="acces">ExtÃ©rieur</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.377394,48.870536</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2008/2009</SimpleData>
+		<SimpleData name="site">Gymnase Patriarches</SimpleData>
+		<SimpleData name="adresse">6 Place Bernard Halphen</SimpleData>
+		<SimpleData name="arrond">75005</SimpleData>
+		<SimpleData name="adresse_com">6 Place Bernard Halphen 75005 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_no">7h Ã  22h30</SimpleData>
+		<SimpleData name="horaires_va">7h Ã  14h</SimpleData>
+		<SimpleData name="horaires_va_1">7h Ã  22h30</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.350677,48.840253</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2008/2009</SimpleData>
+		<SimpleData name="site">Gymnase Buffault</SimpleData>
+		<SimpleData name="adresse">26 rue Buffault</SimpleData>
+		<SimpleData name="arrond">75009</SimpleData>
+		<SimpleData name="adresse_com">26 rue Buffault 75009 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_no">9h Ã  22h30</SimpleData>
+		<SimpleData name="horaires_va">7h Ã  15h</SimpleData>
+		<SimpleData name="horaires_va_1">9h Ã  22h30</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.342156,48.875976</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2008/2009</SimpleData>
+		<SimpleData name="site">Centre spotif Paul ValÃ©ry</SimpleData>
+		<SimpleData name="adresse">15 rue de la Nouvelle CalÃ©donie</SimpleData>
+		<SimpleData name="arrond">75012</SimpleData>
+		<SimpleData name="adresse_com">15 rue de la Nouvelle CalÃ©donie 75012 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_no">8h Ã  22h</SimpleData>
+		<SimpleData name="horaires_va">8h Ã  22h</SimpleData>
+		<SimpleData name="horaires_va_1">8h Ã  22h</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.410282,48.837933</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2008/2009</SimpleData>
+		<SimpleData name="site">Centre sportif Elisabeth</SimpleData>
+		<SimpleData name="adresse">7-15 Av Paul Appell</SimpleData>
+		<SimpleData name="arrond">75014</SimpleData>
+		<SimpleData name="adresse_com">7-15 Av Paul Appell 75014 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_no">8h Ã  22h30</SimpleData>
+		<SimpleData name="horaires_va">8h Ã  22h</SimpleData>
+		<SimpleData name="horaires_va_1">8h Ã  22h30</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.328912,48.821232</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2010</SimpleData>
+		<SimpleData name="site">Centre d'animation Jemmapes</SimpleData>
+		<SimpleData name="adresse">116 Quai de Jemmapes</SimpleData>
+		<SimpleData name="arrond">75010</SimpleData>
+		<SimpleData name="adresse_com">116 Quai de Jemmapes 75010 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_no">9h Ã  22h</SimpleData>
+		<SimpleData name="horaires_va">10h Ã  19h</SimpleData>
+		<SimpleData name="horaires_va_1">9h Ã  22h</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.363661,48.874772</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2010</SimpleData>
+		<SimpleData name="site">Centre d'animation Place des FÃªtes</SimpleData>
+		<SimpleData name="adresse">2/4 rue des Lilas</SimpleData>
+		<SimpleData name="arrond">75019</SimpleData>
+		<SimpleData name="adresse_com">2/4 rue des Lilas 75019 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_no">11h Ã  22h</SimpleData>
+		<SimpleData name="horaires_va_1">fermÃ©</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.395497,48.877801</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2008/2009</SimpleData>
+		<SimpleData name="site">TEP Neuve St Pierre</SimpleData>
+		<SimpleData name="adresse">5-7 rue Neuve St Pierre</SimpleData>
+		<SimpleData name="arrond">75004</SimpleData>
+		<SimpleData name="adresse_com">5-7 rue Neuve St Pierre 75004 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_no">8h Ã  22h</SimpleData>
+		<SimpleData name="horaires_va">8h Ã  22h</SimpleData>
+		<SimpleData name="horaires_va_1">8h Ã  22h</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.36381,48.853622</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2008/2009</SimpleData>
+		<SimpleData name="site">Gymnase Japy</SimpleData>
+		<SimpleData name="adresse">2 rue Jappy</SimpleData>
+		<SimpleData name="arrond">75011</SimpleData>
+		<SimpleData name="adresse_com">2 rue Jappy 75011 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_va">7h Ã  16h</SimpleData>
+		<SimpleData name="horaires_va_1">fermÃ©</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.382548,48.855888</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2008/2009</SimpleData>
+		<SimpleData name="site">Centre sportif Rigoulot</SimpleData>
+		<SimpleData name="adresse">18 Av de la Porte de Brancion</SimpleData>
+		<SimpleData name="arrond">75015</SimpleData>
+		<SimpleData name="adresse_com">18 Av de la Porte de Brancion 75015 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_no">7h Ã  22h30</SimpleData>
+		<SimpleData name="horaires_va">7h Ã  22h</SimpleData>
+		<SimpleData name="horaires_va_1">7h Ã  22h30</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.300662,48.826643</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#preservatifs">
+		<SimpleData name="annee_insta">2008/2009</SimpleData>
+		<SimpleData name="site">Centre sportif Jules LadoumÃ¨gue</SimpleData>
+		<SimpleData name="adresse">Place de la Porte de Pantin</SimpleData>
+		<SimpleData name="arrond">75019</SimpleData>
+		<SimpleData name="adresse_com">Place de la Porte de Pantin 75019 Paris  France</SimpleData>
+		<SimpleData name="acces">IntÃ©rieur</SimpleData>
+		<SimpleData name="horaires_no">8h Ã  22h</SimpleData>
+		<SimpleData name="horaires_va">7h Ã  20h</SimpleData>
+		<SimpleData name="horaires_va_1">8h Ã  22h</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>2.395229,48.889565</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
