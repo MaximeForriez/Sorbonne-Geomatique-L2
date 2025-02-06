@@ -117,6 +117,8 @@
 
 - [Infoterre (B.R.G.M.)](https://infoterre.brgm.fr/viewer/MainTileForward.do)
 
+- [Données de la ville de Paris](http://opendata.paris.fr/page/home/)
+
 ## Logiciels et langages de programmation
 
 - [Plugins Q-GIS](https://plugins.qgis.org/plugins/)
