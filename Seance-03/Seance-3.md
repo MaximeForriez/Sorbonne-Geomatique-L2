@@ -99,11 +99,13 @@ Il existe deux manières de construire des chaînes de caractères.
 - soit `"..."` ;
 - soit `'...'`.
 
-> [!NOTE] Pour introduire des guillemets, il suffit d'écrire :
-- soit `"` dans un `"` ;
-- soit `\'` dans un `'`.
+> [!NOTE]
+> Pour introduire des guillemets, il suffit d'écrire :
+> - soit `"` dans un `"` ;
+> - soit `\'` dans un `'`.
 
-> [!NOTE] On utilise `\\` pour un *backslash*.
+> [!NOTE]
+> On utilise `\\` pour un *backslash*.
 
 Des instructions peuvent se regrouper sous la forme d'un bloc :
 
@@ -117,7 +119,8 @@ Il est nécessaire de « labeliser » le programme :
 nomDuLabel:
 ```
 
-> [!WARNING] Il faut éviter les mots réservés suivants :
+> [!WARNING]
+> Il faut éviter les mots réservés suivants :
 > - `abstract`
 > - `boolean`
 > - `break`
