@@ -938,7 +938,7 @@ else
 
 `Number.parseFloat(num);` convertit un `string` en nombre flottant. Il est mis en place depuis 2015.
 
-###### <a name="methodeInstanceNumber">Les méthodes d'instance de `Number`</a>
+###### <div name="methodeInstanceNumber">Les méthodes d'instance de `Number`</div>
 
 ```
 let num = 10;
