@@ -938,7 +938,7 @@ else
 
 `Number.parseFloat(num);` convertit un `string` en nombre flottant. Il est mis en place depuis 2015.
 
-###### <div name="methodeInstanceNumber">Les méthodes d'instance de `Number`</div>
+###### Les méthodes d'instance de `Number`
 
 ```
 let num = 10;
@@ -982,11 +982,11 @@ let bigInt = BigInt(nombre);
 
 ###### Les méthodes d'instance de `BigInt`
 
-`nombre.toLocaleString(string)` $\rightarrow$ cf. les <a href="#methodeInstanceNumber">méthodes d'instance de `Number`</a>
+`nombre.toLocaleString(string)` $\rightarrow$ cf. les méthodes d'instance de `Number`
 
-`nombre.toString(base)` $\rightarrow$ cf. les <a href="#methodeInstanceNumber">méthodes d'instance de `Number`</a>
+`nombre.toString(base)` $\rightarrow$ cf. les méthodes d'instance de `Number`
 
-`nombre.valueOf()` $\rightarrow$ cf. les <a href="#methodeInstanceNumber">méthodes d'instance de `Number`</a>
+`nombre.valueOf()` $\rightarrow$ cf. les méthodes d'instance de `Number`
 
 ##### L'objet `Math`
 
