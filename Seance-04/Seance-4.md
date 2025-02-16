@@ -131,15 +131,15 @@ Pour réaliser des modèles conceptuels des données, il existe un outil spécif
 Le modèle conceptuel de données permet de réfléchir sur la **structure** de la base de données. Il définit trois éléments :
 1. les \textbf{entités}, qui correspondent à un concept, une idée ;
 
-![Définir une entité](../Ressources/MCD-1.png)
+![Définir une entité](../Ressources/MCD-1.png "Définir une entité")
 
 2. les \textbf{associations} (ou liaison) entre entités ;
 
-![Définir une liaison entre les entités](../Ressources/MCD-2.png)
+![Définir une liaison entre les entités](../Ressources/MCD-2.png "Définir une liaison entre les entités")
 
 3. les \textbf{cardinalités} entre entité et association.
 
-![Définir la cardinalité](../Ressources/MCD-3.png)
+![Définir la cardinalité](../Ressources/MCD-3.png "Définir la cardinalité")
 
 Le modèle conceptuel de données permet de décrire un ensemble de données relatives à un domaine défini afin de les intégrer dans une base de données. Il s'agit d'une représentation statique.
 
