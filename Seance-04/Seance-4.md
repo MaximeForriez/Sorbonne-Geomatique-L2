@@ -95,7 +95,7 @@ Au niveau conceptuel, le  modèle conceptuel de communication représente les é
 4. Identifier les acteurs externes et internes
 5. Modéliser les échanges d'informations entre les différents acteurs
 
-Le  modèle conceptuel de communication est une étude des systèmes présents dans le projet. La \textbf{systémique} est une méthode proposant :
+Le  modèle conceptuel de communication est une étude des systèmes présents dans le projet. La **systémique** est une méthode proposant :
 1. une approche partant du général et allant vers le particulier, c'est-à-dire les sous-systèmes ;
 2. des échanges entre systèmes ;
 3. des domaines, c'est-à-dire des systèmes homogènes d'information (permettant de gérer la mémoire).
@@ -104,7 +104,7 @@ Le  modèle conceptuel de communication est une étude des systèmes présents d
 
 Un acteur est un rôle, et non une personne.
 
-Un acteur est représenté par un \textbf{cercle} libellé par son nom.
+Un acteur est représenté par un **cercle** libellé par son nom.
 - Un acteur interne est représenté par un cercle plein (domaines, sous-domaines).
 - Un acteur externe est représenté par un cercle en pointillés (partenaires, intervenants).
 
@@ -129,15 +129,15 @@ Si le flux d'information est un **message**, cela signifie qu'un ensemble d'info
 Pour réaliser des modèles conceptuels des données, il existe un outil spécifique, le logiciel `Lopping`.
 
 Le modèle conceptuel de données permet de réfléchir sur la **structure** de la base de données. Il définit trois éléments :
-1. les \textbf{entités}, qui correspondent à un concept, une idée ;
+1. les **entités**, qui correspondent à un concept, une idée ;
 
 ![Définir une entité](../Ressources/MCD-1.png "Définir une entité")
 
-2. les \textbf{associations} (ou liaison) entre entités ;
+2. les **associations** (ou liaison) entre entités ;
 
 ![Définir une liaison entre les entités](../Ressources/MCD-2.png "Définir une liaison entre les entités")
 
-3. les \textbf{cardinalités} entre entité et association.
+3. les **cardinalités** entre entité et association.
 
 ![Définir la cardinalité](../Ressources/MCD-3.png "Définir la cardinalité")
 
@@ -145,11 +145,11 @@ Le modèle conceptuel de données permet de décrire un ensemble de données rel
 
 ##### Construire un dictionnaire des données
 
-Afin de ne pas se lancer en faisant n'importe quoi, il est conseillé de réaliser un \textbf{dictionnaire de données} (ou un référentiel de données). Il s'agit d'un \textbf{inventaire exhaustif} des données du domaine étudié. Il s'agit d'une collection de métadonnées nécessaire à la conception d'une base de données relationnelles. L'objectif est de \textbf{définir une vocabulaire commun}. Il s'agit du référentiel principal de l'organisation sur lequel s'appuie l'ensemble des décisions à prendre. Il correspond à un tableau à six entrées afin de définir les données :
+Afin de ne pas se lancer en faisant n'importe quoi, il est conseillé de réaliser un **dictionnaire de données** (ou un référentiel de données). Il s'agit d'un **inventaire exhaustif** des données du domaine étudié. Il s'agit d'une collection de métadonnées nécessaire à la conception d'une base de données relationnelles. L'objectif est de **définir une vocabulaire commun**. Il s'agit du référentiel principal de l'organisation sur lequel s'appuie l'ensemble des décisions à prendre. Il correspond à un tableau à six entrées afin de définir les données :
 1. un code. Il s'agit d'un identifiant ;
 2. un libellé. Les noms choisis ne doivent pas être décomposables. Il faut éviter les homonymes et les synonymes ;
 3. un type (entier, réel, date, chaîne de caractères, booléen) ;
-4. une contrainte d'intégrité (C.I.). La donnée est-elle contrainte par une règle précise ? Par exemple, un intervalle d'existence, une règle juridique, \textit{etc}. Une contrainte d'intégrité est une règle à observer pour que chacune des valeurs que revêt une donnée soit correcte. Elle peut être :
+4. une contrainte d'intégrité (C.I.). La donnée est-elle contrainte par une règle précise ? Par exemple, un intervalle d'existence, une règle juridique, *etc*. Une contrainte d'intégrité est une règle à observer pour que chacune des valeurs que revêt une donnée soit correcte. Elle peut être :
     - statique. Elle doit se vérifier tout le temps ;
 	- dynamique. Elle est validée à chaque mise à jour ;
 	- référentielle. Elle est liée à des associations. Elle vérifie l'existence d'une occurrence de l'entité ;
@@ -161,7 +161,7 @@ Afin de ne pas se lancer en faisant n'importe quoi, il est conseillé de réalis
 > Il n'existe **aucune norme universelle** concernant la conception de ce dictionnaire.
 
 > [!NOTE]
-> Lors de la création des applications de base de données, une couche supplémentaire de logiciel de dictionnaire de données peut être introduite : le \textit{middleware}. Ce dernier communique avec le dictionnaire de données de la base de données sous-jacente.
+> Lors de la création des applications de base de données, une couche supplémentaire de logiciel de dictionnaire de données peut être introduite : le *middleware*. Ce dernier communique avec le dictionnaire de données de la base de données sous-jacente.
 
 Le dictionnaire de données remplit cinq grands objectifs :
 1. **démocratiser l'accès à la données** ;
@@ -253,7 +253,7 @@ Les **types d'association** se classent en fonction des cardinalités.
 
 **Exemple.** « Le client passe une commande ». Dans cette action, le client possède une cardinalité allant de 0 à $n$. En effet, le client peut ne pas passer une commande, et il peut en passer de $1$ à $n$. La commande n'existe que si le client passe une commande. Sa cardinalité minimale est par conséquent de $1$. L'entité « commande » renvoie les identifiants d'une liste de produit. Sa cardinalité maximale est par conséquent de $1$.
 
-![M.C.D. de l'action « Le client passe une commande »](../Ressources/MCD-Exemple.png)
+![M.C.D. de l'action « Le client passe une commande »](../Ressources/MCD-Exemple.png "M.C.D. de l'action « Le client passe une commande »")
 
 ##### Respecter les règles générales
 
@@ -277,7 +277,7 @@ Les entités peuvent être :
 
 ##### Les formes normales d'un modèle conceptuel de données
 
-Au niveau des règles de normalisation des entités, on ne représente que les \textbf{dépendances fonctionnelles élémentaires}, c'est-à-dire non transitives. 
+Au niveau des règles de normalisation des entités, on ne représente que les **dépendances fonctionnelles élémentaires**, c'est-à-dire non transitives. 
 
 > [!NOTE]
 > Les propriétés non identifiantes d'une entité dépendent de manière fonctionnelle de l'ensemble des identifiants.
@@ -346,7 +346,7 @@ Par les opérateurs logiques « et » et « ou », une **synchronisation** perme
 
 Par opposition, une opération sans synchronisation a besoin de découper les opérations.
 
-![Symbole d'une synchronisation](../Ressources/MCT-1.png)
+![Symbole d'une synchronisation](../Ressources/MCT-1.png "Symbole d'une synchronisation")
 
 Une **opération** est une séquence continue d'actions non interruptibles. Elle est déclenchée par des événements et produit des événements. Toute opération a un nom. Elle est composée d'**actions**, c'est-à-dire de traitements appliqués aux données en entrée selon certaines règles. Elle se conclut par une ou des règles d'émission qui donnent les résultats possibles de l'opération.
 
@@ -369,7 +369,7 @@ Une **opération** est une séquence continue d'actions non interruptibles. Elle
 > [!NOTE]
 > Il faut réduire les chaînes d'opérations en fusionnant une telle chaîne sous la forme d'actions.
 
-![Symbole d'une opération](../Ressources/MCT-2.png)
+![Symbole d'une opération](../Ressources/MCT-2.png "[Symbole d'une opération")
 
 ### Les modèles au niveau organisationnel
 
@@ -385,7 +385,7 @@ Le M.O.C. peut choisir trois architectures :
 2. la centralisation sur plusieurs niveaux ;
 3. la décentralisation totale.
 
-![Exemple de M.O.C. totalement centralisé](../Ressources/MOC-Exemple.png)
+![Exemple de M.O.C. totalement centralisé](../Ressources/MOC-Exemple.png "Exemple de M.O.C. totalement centralisé")
 
 #### Le modèle organisationnel des données (M.O.D.)
 
@@ -456,14 +456,14 @@ Le passage du modèle conceptuel de données au modèle logique des données rel
 8. Avec des relations ternaires, on crée une table supplémentaire ayant comme clé primaire une clé composée des clés primaires de toutes les tables reliées. Cette règle s'applique de manière indépendante des différentes cardinalités. Lorsque la relation contient elle-même des propriétés, celles-ci deviennent attributs de la table supplémentaire. Une propriété de la relation qui est soulignée devra appartenir à la clé primaire composée de la table supplémentaire.
 9. Avec des relations multiples (au-delà de trois) entre deux entités, les règles générales s'appliquent.
 10. Avec des relations réflexives, les règles générales s'appliquent.
-11. Avec un identifiant relatif, dans chaque cas, la table issue de l'entité dépendante contient comme clé étrangère, la clé primaire de l'autre table. L'identification relative est représentée par le fait que la table issue de l'entité dépendante contient une \textbf{clé primaire composée}, constituée de la clé primaire transformée de l'identifiant de cette entité et de la clé étrangère.
+11. Avec un identifiant relatif, dans chaque cas, la table issue de l'entité dépendante contient comme clé étrangère, la clé primaire de l'autre table. L'identification relative est représentée par le fait que la table issue de l'entité dépendante contient une **clé primaire composée**, constituée de la clé primaire transformée de l'identifiant de cette entité et de la clé étrangère.
 
 > [!WARNING]
 > Il s'agit d'une formalisation des tables logiques, basée sur un modèle conceptuel de données donné.
 
 Un modèle logique de données est essentiellement composé de tables logiques reliées entre elles par des flèches
 
-![Liaison entre deux tables par l'intermédiaire d'une clé primaire et d'une clé étrangère](../Ressources/MLD.png)
+![Liaison entre deux tables par l'intermédiaire d'une clé primaire et d'une clé étrangère](../Ressources/MLD.png "Liaison entre deux tables par l'intermédiaire d'une clé primaire et d'une clé étrangère")
 
 #### Les modèles logiques des traitements (M.L.T.)
 
