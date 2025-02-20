@@ -82,7 +82,7 @@ Les rapports sont notés sur une base de trente points.
 
 	- Explication du choix des couches représentées
 
-- Présence d'une légende
+- Présence d'une légende (1 point)
 
 - Qualité scientifique de la ou des cartes (5 points)
 
