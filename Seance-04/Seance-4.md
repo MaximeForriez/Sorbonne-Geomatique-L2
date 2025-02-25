@@ -80,7 +80,7 @@ Différence entre :
 
 ## Les modèles de la M.E.R.I.S.E.
 
-[Les niveaux de compréhension](https://perso.univ-lemans.fr/ cpiau/BD/SQL_PAGES/SQL0.html).
+[Les niveaux de compréhension](https://perso.univ-lemans.fr/cpiau/BD/SQL_PAGES/SQL0.html).
 
 [Outil pour réaliser facilement les schémas](https://app.diagrams.net)
 

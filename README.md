@@ -61,7 +61,7 @@ Le plan du cours a été compacté, car les séances du 1<sup>er</sup> et 8 mai 
 ### [Séance 13 - Évaluation finale (Oraux) - Groupe 3](./Seance-12/Seance-12.md) [15/05/2025]
 
 > [!NOTE]
-> - Chaque groupe dispose de 10 minutes pour présenter son *Stroy Map*.
+> - Chaque groupe dispose de 10 minutes pour présenter son *Story Map*.
 > - La remise du rapport est prévue pour le 9 mai 2025 à minuit au plus tard, soit une semaine avant votre oral, à l'adresse suivante : **maxime.forriez@sorbonne-universite.fr**.
 > - Le rapport **doit** être en format *.pdf. Je n'ai pas de traitement de texte installé sur ma machine, si vous m'envoyez un format *.docx. Je ne pourrai pas le lire, donc 0/20.
 > - Le rapport peut être envoyé par l'intermédiaire d'une plateforme comme WeTransfer.

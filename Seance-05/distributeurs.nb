@@ -1,0 +1,618 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     28085,        608]
+NotebookOptionsPosition[     27068,        584]
+NotebookOutlinePosition[     27493,        600]
+CellTagsIndexPosition[     27450,        597]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"data", "=", 
+   RowBox[{
+   "Import", "[", 
+    "\"\<C:\\\\+Maxime \
+Forriez+\\\\Cours-Geomatique\\\\Seance-05\\\\distributeurs.csv\>\"", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"datatitre", "=", 
+  RowBox[{"Prepend", "[", 
+   RowBox[{
+    RowBox[{"data", "[", 
+     RowBox[{"[", "1", "]"}], "]"}], ",", "\"\<Id\>\""}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"data", "=", 
+   RowBox[{"Take", "[", 
+    RowBox[{"data", ",", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", 
+       RowBox[{"-", "1"}]}], "}"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"data", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"Flatten", "[", 
+      RowBox[{"{", 
+       RowBox[{"i", ",", 
+        RowBox[{"data", "[", 
+         RowBox[{"[", "i", "]"}], "]"}]}], "}"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "1", ",", 
+       RowBox[{"Length", "[", "data", "]"}]}], "}"}]}], "]"}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.949411052321417*^9, 3.9494110662922277`*^9}, {
+  3.949411183065978*^9, 3.9494111945783377`*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"6171ca9d-56d5-4827-a154-6836a892079f"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Id\"\>", ",", "\<\"X\"\>", ",", "\<\"Y\"\>", 
+   ",", "\<\"Name\"\>", ",", "\<\"description\"\>", ",", "\<\"timestamp\"\>", 
+   ",", "\<\"begin\"\>", ",", "\<\"end\"\>", ",", "\<\"altitudeMode\"\>", 
+   ",", "\<\"tessellate\"\>", ",", "\<\"extrude\"\>", 
+   ",", "\<\"visibility\"\>", ",", "\<\"drawOrder\"\>", ",", "\<\"icon\"\>", 
+   ",", "\<\"annee_insta\"\>", ",", "\<\"site\"\>", ",", "\<\"adresse\"\>", 
+   ",", "\<\"arrond\"\>", ",", "\<\"adresse_com\"\>", ",", "\<\"acces\"\>", 
+   ",", "\<\"horaires_no\"\>", ",", "\<\"horaires_va\"\>", 
+   ",", "\<\"horaires_va_1\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.949411194937106*^9},
+ CellLabel->"Out[24]=",ExpressionUUID->"bd202cc0-c92d-4b81-bd4e-8a85e18abc97"]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"coord", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"Take", "[", 
+      RowBox[{
+       RowBox[{"data", "[", 
+        RowBox[{"[", "i", "]"}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "3"}], "}"}]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "1", ",", 
+       RowBox[{"Length", "[", "data", "]"}]}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"attribut", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"Flatten", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"data", "[", 
+         RowBox[{"[", 
+          RowBox[{"i", ",", "1"}], "]"}], "]"}], ",", 
+        RowBox[{"Take", "[", 
+         RowBox[{
+          RowBox[{"data", "[", 
+           RowBox[{"[", "i", "]"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"4", ",", 
+            RowBox[{"-", "1"}]}], "}"}]}], "]"}]}], "}"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "1", ",", 
+       RowBox[{"Length", "[", "data", "]"}]}], "}"}]}], "]"}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.949411204076022*^9, 3.949411279843991*^9}},
+ CellLabel->"In[30]:=",ExpressionUUID->"5a2a7730-eb9a-4d03-b3a2-4cc433d7c3ac"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"titrecoord", "=", 
+   RowBox[{"Take", "[", 
+    RowBox[{"datatitre", ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "3"}], "}"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"titreattribut", "=", 
+   RowBox[{"Flatten", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"datatitre", "[", 
+       RowBox[{"[", "1", "]"}], "]"}], ",", 
+      RowBox[{"Take", "[", 
+       RowBox[{"datatitre", ",", 
+        RowBox[{"{", 
+         RowBox[{"4", ",", 
+          RowBox[{"-", "1"}]}], "}"}]}], "]"}]}], "}"}], "]"}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.949411282565816*^9, 3.9494113260629215`*^9}},
+ CellLabel->"In[35]:=",ExpressionUUID->"57b37b66-419a-40e7-b915-fe18721461ee"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{
+   "\"\<C:\\\\+Maxime \
+Forriez+\\\\Cours-Geomatique\\\\Seance-05\\\\distributeurs-coord.csv\>\"", 
+    ",", 
+    RowBox[{"Prepend", "[", 
+     RowBox[{"coord", ",", "titrecoord"}], "]"}], ",", 
+    RowBox[{"CharacterEncoding", "\[Rule]", "\"\<UTF8\>\""}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{
+   "\"\<C:\\\\+Maxime \
+Forriez+\\\\Cours-Geomatique\\\\Seance-05\\\\distributeurs-attribut.csv\>\"", 
+    ",", 
+    RowBox[{"Prepend", "[", 
+     RowBox[{"attribut", ",", "titreattribut"}], "]"}], ",", 
+    RowBox[{"CharacterEncoding", "\[Rule]", "\"\<UTF8\>\""}]}], "]"}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.9494113311712313`*^9, 3.9494114057317963`*^9}},
+ CellLabel->"In[37]:=",ExpressionUUID->"afdbbdbf-cf9a-44df-90dc-bf5a0754c705"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"xls", "=", 
+  RowBox[{"Prepend", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"Take", "[", 
+       RowBox[{
+        RowBox[{"data", "[", 
+         RowBox[{"[", "i", "]"}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"2", ",", 
+          RowBox[{"-", "1"}]}], "}"}]}], "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"i", ",", "1", ",", 
+        RowBox[{"Length", "[", "data", "]"}]}], "}"}]}], "]"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Take", "[", 
+     RowBox[{"datatitre", ",", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", 
+        RowBox[{"-", "1"}]}], "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{
+   "\"\<C:\\\\+Maxime \
+Forriez+\\\\Cours-Geomatique\\\\Seance-05\\\\distributeurs.csv\>\"", ",", 
+    "xls", ",", 
+    RowBox[{"CharacterEncoding", "\[Rule]", "\"\<UTF8\>\""}]}], "]"}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.949414325413533*^9, 3.9494144138437614`*^9}},
+ CellLabel->"In[45]:=",ExpressionUUID->"00ea04c0-7f80-471b-98bc-2522d776c5b7"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"X\"\>", ",", "\<\"Y\"\>", ",", "\<\"Name\"\>", 
+     ",", "\<\"description\"\>", ",", "\<\"timestamp\"\>", 
+     ",", "\<\"begin\"\>", ",", "\<\"end\"\>", ",", "\<\"altitudeMode\"\>", 
+     ",", "\<\"tessellate\"\>", ",", "\<\"extrude\"\>", 
+     ",", "\<\"visibility\"\>", ",", "\<\"drawOrder\"\>", ",", "\<\"icon\"\>",
+      ",", "\<\"annee_insta\"\>", ",", "\<\"site\"\>", ",", "\<\"adresse\"\>",
+      ",", "\<\"arrond\"\>", ",", "\<\"adresse_com\"\>", ",", "\<\"acces\"\>",
+      ",", "\<\"horaires_no\"\>", ",", "\<\"horaires_va\"\>", 
+     ",", "\<\"horaires_va_1\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.275998`", ",", "48.872568`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"2008/2009\"\>", ",", "\<\"Stade Jean Pierre Wimille\"\>", 
+     ",", "\<\"56 Bd de l'Amiral Bruix\"\>", ",", "75016", 
+     ",", "\<\"56 Bd de l'Amiral Bruix 75016 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"7h \[AGrave] 22h30\"\>", 
+     ",", "\<\"8h \[AGrave] 18h\"\>", ",", "\<\"ferm\[EAcute]\"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.351833`", ",", "48.899628`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"2008/2009\"\>", ",", "\<\"Centre sportif Poissonniers\"\>", 
+     ",", "\<\"2 rue Jean Cocteau\"\>", ",", "75018", 
+     ",", "\<\"2 rue Jean Cocteau 75018 Paris  France\"\>", 
+     ",", "\<\"Ext\[EAcute]rieur\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.411563`", ",", "48.856795`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"2008/2009\"\>", 
+     ",", "\<\"Centre sportif D\[EAcute]j\[EAcute]rine\"\>", 
+     ",", "\<\"34 rue des docteurs D\[EAcute]j\[EAcute]rine\"\>", ",", 
+     "75020", ",", "\<\"34 rue des docteurs D\[EAcute]j\[EAcute]rine 75020 \
+Paris  France\"\>", ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"ferm\[EAcute]\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.34463`", ",", "48.89247`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "2010", 
+     ",", "\<\"Kiosque jeunes Goutte D'Or\"\>", 
+     ",", "\<\"1 rue Fleury Centre Musical\"\>", ",", "75018", 
+     ",", "\<\"1 rue Fleury Centre Musical 75018 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"ferm\[EAcute]\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.365686`", ",", "48.824405`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "2010", 
+     ",", "\<\"Antenne jeunes Olympiades\"\>", 
+     ",", "\<\"32 rue du Javelot Tour Anvers\"\>", ",", "75013", 
+     ",", "\<\"32 rue du Javelot Tour Anvers 75013 Paris  France\"\>", 
+     ",", "\<\"Ext\[EAcute]rieur\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.363065`", ",", "48.898551`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "2010", 
+     ",", "\<\"Espace jeunes Charles Hermitte\"\>", ",", "\<\"54 Bd Ney\"\>", 
+     ",", "75018", ",", "\<\"54 Bd Ney 75018 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"10h \[AGrave] 20h\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"10h \[AGrave] 20h\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.399533`", ",", "48.832304`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"2008/2009\"\>", 
+     ",", "\<\"Centre sportif L\[EAcute]o Lagrange\"\>", 
+     ",", "\<\"68 Bd Poniatowsky\"\>", ",", "75012", 
+     ",", "\<\"68 Bd Poniatowsky 75012 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"8h \[AGrave] 22h\"\>", 
+     ",", "\<\"8h \[AGrave] 21h\"\>", ",", "\<\"8h \[AGrave] 17h\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.315428`", ",", "48.824199`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"2008/2009\"\>", 
+     ",", "\<\"Centre sportif Jules No\[EDoubleDot]l\"\>", 
+     ",", "\<\"3 Av Maurice D'Ocagne\"\>", ",", "75014", 
+     ",", "\<\"3 Av Maurice D'Ocagne 75014 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"8h \[AGrave] 22h30\"\>", 
+     ",", "\<\"8h \[AGrave] 22h\"\>", ",", "\<\"9h \[AGrave] 22h30\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.279085`", ",", "48.840328`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"2008/2009\"\>", ",", "\<\"Gymnase C\[EAcute]vennes\"\>", 
+     ",", "\<\"11 rue de la Montagne d'Aulas\"\>", ",", "75015", 
+     ",", "\<\"11 rue de la Montagne d'Aulas 75015 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"7h \[AGrave] 22h30\"\>", 
+     ",", "\<\"8h \[AGrave] 16h\"\>", ",", "\<\"7h \[AGrave] 19h\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.31863`", ",", "48.88387`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"2008/2009\"\>", 
+     ",", "\<\"Centre sportif Max Rousi\[EAcute]\"\>", 
+     ",", "\<\"28 rue Andr\[EAcute] Br\[EAcute]chet\"\>", ",", "75017", 
+     ",", "\<\"28 rue Andr\[EAcute] Br\[EAcute]chet 75017 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"8h \[AGrave] 21h30\"\>", 
+     ",", "\<\"8h \[AGrave] 21h\"\>", ",", "\<\"8h \[AGrave] 21h30\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.38225`", ",", "48.88237`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"2008/2009\"\>", ",", "\<\"Gymnase Jean Jaur\[EGrave]s\"\>", 
+     ",", "\<\"87 Av J.Jaur\[EGrave]s\"\>", ",", "75019", 
+     ",", "\<\"87 Av J.Jaur\[EGrave]s 75019 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"7h \[AGrave] 22h30\"\>", 
+     ",", "\<\"8h \[AGrave] 17h\"\>", ",", "\<\"ferm\[EAcute]\"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.289272`", ",", "48.85494`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "2010", 
+     ",", "\<\"Kiosque jeunes Champ de Mars\"\>", 
+     ",", "\<\"101 Quai Branly\"\>", ",", "75015", 
+     ",", "\<\"101 Quai Branly 75015 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"10h \[AGrave] 18h\"\>", 
+     ",", "\<\"10h \[AGrave] 18h\"\>", ",", "\<\"10h \[AGrave] 18h\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.372123`", ",", "48.887047`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "2010", 
+     ",", "\<\"Antenne jeunes Flandre\"\>", 
+     ",", "\<\"49 ter Av de Flandre\"\>", ",", "75019", 
+     ",", "\<\"49 ter Av de Flandre 75019 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"14h \[AGrave] 19h\"\>", ",", "\<\"14h \[AGrave] 19h\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.309606`", ",", "48.831535`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "2010", 
+     ",", "\<\"Centre d'animation Vercing\[EAcute]torix\"\>", 
+     ",", "\<\"181/183 rue de Vercing\[EAcute]torix\"\>", ",", "75014", 
+     ",", "\<\"181/183 rue de Vercing\[EAcute]torix 75014 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"10h \[AGrave] 18h\"\>", 
+     ",", "\<\"10h \[AGrave] 18h\"\>", ",", "\<\"10h \[AGrave] 17h\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.354645`", ",", "48.884987`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "2010", 
+     ",", "\<\"Espace jeunes Goutte D'Or\"\>", 
+     ",", "\<\"6 rue de la Goutte d'Or\"\>", ",", "75018", 
+     ",", "\<\"6 rue de la Goutte d'Or 75018 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"14h \[AGrave] 21h\"\>", ",",
+      "\<\"\"\>", ",", "\<\"14h \[AGrave] 21h\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.407303`", ",", "48.854988`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "2010", 
+     ",", "\<\"Espace jeunes St Blaise\"\>", 
+     ",", "\<\"1 rue Pauline Kergomard\"\>", ",", "75020", 
+     ",", "\<\"1 rue Pauline Kergomard 75020 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"10h30 \[AGrave] 19h\"\>", 
+     ",", "\<\"14h \[AGrave] 19h\"\>", ",", "\<\"14h \[AGrave] 19h\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.368197`", ",", "48.877355`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"2008/2009\"\>", 
+     ",", "\<\"Centre sportif Grange aux belles\"\>", 
+     ",", "\<\"17 rue Boy-Zelenski\"\>", ",", "75010", 
+     ",", "\<\"17 rue Boy-Zelenski 75010 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"8h \[AGrave] 22h30\"\>", 
+     ",", "\<\"9h \[AGrave] 21h\"\>", ",", "\<\"9h \[AGrave] 22h30\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.359162`", ",", "48.817942`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"2008/2009\"\>", ",", "\<\"Centre sportif Bourneville\"\>", 
+     ",", "\<\"5 rue du docteur Bourneville\"\>", ",", "75013", 
+     ",", "\<\"5 rue du docteur Bourneville 75013 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"7h \[AGrave] 22h30\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"13h \[AGrave] 22h30\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.366898`", ",", "48.82046`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"2008/2009\"\>", 
+     ",", "\<\"Centre sportif Georges Carpentier\"\>", 
+     ",", "\<\"81 Bd Mass\[EAcute]na\"\>", ",", "75013", 
+     ",", "\<\"81 Bd Mass\[EAcute]na 75013 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"8h \[AGrave] 22h\"\>", 
+     ",", "\<\"8h \[AGrave] 22h\"\>", ",", "\<\"8h \[AGrave] 22h\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.354328`", ",", "48.884988`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"2008/2009\"\>", ",", "\<\"Centre sportif Goutte d'Or\"\>", 
+     ",", "\<\"10-12 passage de la Goutte d'Or\"\>", ",", "75018", 
+     ",", "\<\"10-12 passage de la Goutte d'Or 75018 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"7h \[AGrave] 22h30\"\>", 
+     ",", "\<\"9h \[AGrave] 17h30\"\>", ",", "\<\"8h \[AGrave] 18h\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.377394`", ",", "48.870536`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "2010", 
+     ",", "\<\"Antenne jeunes Orillon\"\>", 
+     ",", "\<\"43 rue de l'Orillon\"\>", ",", "75011", 
+     ",", "\<\"43 rue de l'Orillon 75011 Paris  France\"\>", 
+     ",", "\<\"Ext\[EAcute]rieur\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.350677`", ",", "48.840253`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"2008/2009\"\>", ",", "\<\"Gymnase Patriarches\"\>", 
+     ",", "\<\"6 Place Bernard Halphen\"\>", ",", "75005", 
+     ",", "\<\"6 Place Bernard Halphen 75005 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"7h \[AGrave] 22h30\"\>", 
+     ",", "\<\"7h \[AGrave] 14h\"\>", ",", "\<\"7h \[AGrave] 22h30\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.342156`", ",", "48.875976`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"2008/2009\"\>", ",", "\<\"Gymnase Buffault\"\>", 
+     ",", "\<\"26 rue Buffault\"\>", ",", "75009", 
+     ",", "\<\"26 rue Buffault 75009 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"9h \[AGrave] 22h30\"\>", 
+     ",", "\<\"7h \[AGrave] 15h\"\>", ",", "\<\"9h \[AGrave] 22h30\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.410282`", ",", "48.837933`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"2008/2009\"\>", 
+     ",", "\<\"Centre spotif Paul Val\[EAcute]ry\"\>", 
+     ",", "\<\"15 rue de la Nouvelle Cal\[EAcute]donie\"\>", ",", "75012", 
+     ",", "\<\"15 rue de la Nouvelle Cal\[EAcute]donie 75012 Paris  \
+France\"\>", ",", "\<\"Int\[EAcute]rieur\"\>", 
+     ",", "\<\"8h \[AGrave] 22h\"\>", ",", "\<\"8h \[AGrave] 22h\"\>", 
+     ",", "\<\"8h \[AGrave] 22h\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.328912`", ",", "48.821232`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"2008/2009\"\>", ",", "\<\"Centre sportif Elisabeth\"\>", 
+     ",", "\<\"7-15 Av Paul Appell\"\>", ",", "75014", 
+     ",", "\<\"7-15 Av Paul Appell 75014 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"8h \[AGrave] 22h30\"\>", 
+     ",", "\<\"8h \[AGrave] 22h\"\>", ",", "\<\"8h \[AGrave] 22h30\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.363661`", ",", "48.874772`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "2010", 
+     ",", "\<\"Centre d'animation Jemmapes\"\>", 
+     ",", "\<\"116 Quai de Jemmapes\"\>", ",", "75010", 
+     ",", "\<\"116 Quai de Jemmapes 75010 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"9h \[AGrave] 22h\"\>", 
+     ",", "\<\"10h \[AGrave] 19h\"\>", ",", "\<\"9h \[AGrave] 22h\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.395497`", ",", "48.877801`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "2010", 
+     ",", "\<\"Centre d'animation Place des F\[EHat]tes\"\>", 
+     ",", "\<\"2/4 rue des Lilas\"\>", ",", "75019", 
+     ",", "\<\"2/4 rue des Lilas 75019 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"11h \[AGrave] 22h\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"ferm\[EAcute]\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.36381`", ",", "48.853622`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"2008/2009\"\>", ",", "\<\"TEP Neuve St Pierre\"\>", 
+     ",", "\<\"5-7 rue Neuve St Pierre\"\>", ",", "75004", 
+     ",", "\<\"5-7 rue Neuve St Pierre 75004 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"8h \[AGrave] 22h\"\>", 
+     ",", "\<\"8h \[AGrave] 22h\"\>", ",", "\<\"8h \[AGrave] 22h\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.382548`", ",", "48.855888`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"2008/2009\"\>", ",", "\<\"Gymnase Japy\"\>", 
+     ",", "\<\"2 rue Jappy\"\>", ",", "75011", 
+     ",", "\<\"2 rue Jappy 75011 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"7h \[AGrave] 16h\"\>", ",", "\<\"ferm\[EAcute]\"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.300662`", ",", "48.826643`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"2008/2009\"\>", ",", "\<\"Centre sportif Rigoulot\"\>", 
+     ",", "\<\"18 Av de la Porte de Brancion\"\>", ",", "75015", 
+     ",", "\<\"18 Av de la Porte de Brancion 75015 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"7h \[AGrave] 22h30\"\>", 
+     ",", "\<\"7h \[AGrave] 22h\"\>", ",", "\<\"7h \[AGrave] 22h30\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "2.395229`", ",", "48.889565`", ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", "\<\"\"\>", ",", 
+     RowBox[{"-", "1"}], ",", "0", ",", 
+     RowBox[{"-", "1"}], ",", "\<\"\"\>", ",", "\<\"\"\>", 
+     ",", "\<\"2008/2009\"\>", 
+     ",", "\<\"Centre sportif Jules Ladoum\[EGrave]gue\"\>", 
+     ",", "\<\"Place de la Porte de Pantin\"\>", ",", "75019", 
+     ",", "\<\"Place de la Porte de Pantin 75019 Paris  France\"\>", 
+     ",", "\<\"Int\[EAcute]rieur\"\>", ",", "\<\"8h \[AGrave] 22h\"\>", 
+     ",", "\<\"7h \[AGrave] 20h\"\>", ",", "\<\"8h \[AGrave] 22h\"\>"}], 
+    "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.949414397902686*^9, 3.949414414281082*^9}},
+ CellLabel->"Out[45]=",ExpressionUUID->"00ebe6aa-b910-434e-96e3-8a1390843673"]
+}, Open  ]]
+},
+WindowSize->{582.6, 493.2},
+WindowMargins->{{279, Automatic}, {Automatic, 40.199999999999996`}},
+FrontEndVersion->"12.2 pour Microsoft Windows (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"674805ec-d398-4370-b061-96dbe04b6dff"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1191, 36, 146, "Input",ExpressionUUID->"6171ca9d-56d5-4827-a154-6836a892079f"],
+Cell[1774, 60, 764, 12, 92, "Output",ExpressionUUID->"bd202cc0-c92d-4b81-bd4e-8a85e18abc97"]
+}, Open  ]],
+Cell[2553, 75, 1225, 37, 68, "Input",ExpressionUUID->"5a2a7730-eb9a-4d03-b3a2-4cc433d7c3ac"],
+Cell[3781, 114, 736, 21, 68, "Input",ExpressionUUID->"57b37b66-419a-40e7-b915-fe18721461ee"],
+Cell[4520, 137, 855, 22, 205, "Input",ExpressionUUID->"afdbbdbf-cf9a-44df-90dc-bf5a0754c705"],
+Cell[CellGroupData[{
+Cell[5400, 163, 1133, 32, 166, "Input",ExpressionUUID->"00ea04c0-7f80-471b-98bc-2522d776c5b7"],
+Cell[6536, 197, 20516, 384, 2373, "Output",ExpressionUUID->"00ebe6aa-b910-434e-96e3-8a1390843673"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
