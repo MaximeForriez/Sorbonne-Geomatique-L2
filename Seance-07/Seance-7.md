@@ -4,7 +4,7 @@
 
 S.Q.L. signifie *Structured Query Language*.
 
-### Ressources
+## Ressources
 
 - [Cours de `SQL`](https://www.youtube.com/playlist?list=PLjwdMgw5TTLXXpRlzDZq7d8iS6YXgnslt)
 
@@ -12,11 +12,11 @@ S.Q.L. signifie *Structured Query Language*.
 
 - [Approfondissement sur le `SQL`](https://www.youtube.com/watch?v=jxSgB4UQiY0&list=PLrSOXFDHBtfHxLnX_BvHrcKkLh8sBRcHe)
 
-### Les références
+## Les références
 
 - [https://www.1keydata.com/fr/sql}{https://www.1keydata.com/fr/sql](https://www.1keydata.com/fr/sql}{https://www.1keydata.com/fr/sql)
 
-### Introduction
+## Introduction
 
 Pour introduire le langage S.Q.L., il faut dans un premier temps le définir correctement. 
 
@@ -41,7 +41,7 @@ Il faut bien comprendre dans un second temps que le S.Q.L. n'est pas un langage 
 
 Dans le monde des systèmes d'information géographique, le moteur S.Q.L. utilisé est souvent propre au logiciel que l'on utilise. Il existe un moteur pour `ArcGIS`, un moteur pour `Q-GIS`, un moteur pour `MapInfo`, *etc*. Néanmoins, un certain nombre de mots-clés est commun à l'ensemble de ces moteurs. C'est ce que ce cours propose d'étudier, tout en gardant en tête que rien n'est universel et qu'il faudra vérifier les commandes au cas par cas des différents moteurs.
 
-### Créer et gérer une base de données
+## Créer et gérer une base de données
 
 À partir des bases de données précédentes, cette partie montrera comment réaliser les différentes étapes suivantes :
 1. réaliser un schéma conceptuel des données ;
@@ -53,25 +53,25 @@ Dans le monde des systèmes d'information géographique, le moteur S.Q.L. utilis
 7. créer une base de données de sauvegarde ;
 8. planifier et suivre les tâches.
 
-#### Réaliser un schéma conceptuel des données
+### Réaliser un schéma conceptuel des données
 
 Pour réaliser un schéma conceptuel des données, il faut respecter :
 - les règles des bases de données relationnelles ;
 - les règles de nommage en vigueur dans l'entreprise
 
-#### Mettre en place la base de données à partir du [schéma conceptuel](../Seance-04/Seance-4.md) établi
+### Mettre en place la base de données à partir du [schéma conceptuel](../Seance-04/Seance-4.md) établi
 
-#### Gérer une base de données
+### Gérer une base de données
 
 Il existe deux modèles de gestion de base de données :
 - le modèle C.R.U.D. : *Create*, *Read*, *Update* et *Delete* ;
 - le modèle S.C.R.U.D. : *Search*, *Create*, *Read*, *Update* et *Delete*.
 
-##### Créer des données (C)
+#### Créer des données (C)
 
-###### Requêtes de base
+##### Requêtes de base
 
-- Créer une base de données
+###### Créer une base de données
 
 La commande est :
 ```
@@ -84,28 +84,28 @@ La commande est :
 > [!NOTE]
 > Le point-virgule indique la fin d'une requête.
 
-- Visualiser les bases de données
+###### Visualiser les bases de données
 
 La commande est :
 ```
 	SHOW DATABASES;
 ```
 
-- Utiliser une base de données
+###### Utiliser une base de données
 
 La commande est :
 ```
 	USE test;
 ```
 
-- Supprimer une base de données
+###### Supprimer une base de données
 
 La commande est :
 ```
 	DROP DATABASES IF EXISTS test;
 ```
 
-- Gérer le typage
+###### Gérer le typage
 
 Toute base de données a des tables munies de champs définies par un typage.
 
@@ -160,13 +160,13 @@ Concernant le typage des champs, la règle S.Q.L. est de choisir le type le plus
 
 **Tableau 3. Les types pour les dates**
 
-- Insérer des commentaires
+###### Insérer des commentaires
 
 Pour insérer des commentaire, on utilise :
 - sur une ligne : `--` ou `#` ;
 - sur plusieurs lignes : `/* ... */`.
 
-- Créer des tables (dans une base de données ouverte)
+###### Créer des tables (dans une base de données ouverte)
 
 Les **anti-codes** ` ` ` (l'accent grave) permettent d'entourer les noms des bases de données et les champs. Ils sont vivement recommander si les noms utilisés sont ceux du langage S.Q.L.
 
@@ -185,14 +185,14 @@ Les champs sont définis par leur nom et leur typage.
 > - **les tables liées** ;
 > - **les tables indépendantes**.
 
-- Visualiser les tables d'une base de données
+###### Visualiser les tables d'une base de données
 
 La commande est :
 ```
 	SHOW TABLES FROM `test`;
 ```
 
-- Visualiser la description du contenu d'une table
+###### Visualiser la description du contenu d'une table
 
 La commande est :
 ```
@@ -211,86 +211,88 @@ ou
 	DESK `users`;
 ```
 
-- Modifier une table
-	- ```ALTER TABLE `users`;```
-	- ```ADD `user_points``` *typage* `;` $\rightarrow$ ajout d'un champ
-	- ```DROP `user_points`;``` $\rightarrow$ suppression d'un champ
-	- ```MODIFY `user_points``` *typage* `;` $\rightarrow$ modification de typage
-	- ```CHANGE `user_birthday` `user_birth` DATE;``` $\rightarrow$ modification du nom d'un champ
+###### Modifier une table
 
-- Supprimer une table
+- ```ALTER TABLE `users`;```
+- ```ADD `user_points``` *typage* `;` $\rightarrow$ ajout d'un champ
+- ```DROP `user_points`;``` $\rightarrow$ suppression d'un champ
+- ```MODIFY `user_points``` *typage* `;` $\rightarrow$ modification de typage
+- ```CHANGE `user_birthday` `user_birth` DATE;``` $\rightarrow$ modification du nom d'un champ
+
+###### Supprimer une table
 
 La commande est :
 ```
 	DROP TABLE IF EXISTS `users`;
 ```
 
--Visualiser une table
+###### Visualiser une table
 
 La commande est :
 ```
 	SHOW TABLE STATUS;
 ```
 
-###### Contraintes S.Q.L. sur les champs
+##### Contraintes S.Q.L. sur les champs
 
 Les **contraintes** définissent des règles logiques et cohérentes dans une base de données.
 
-- Mettre des champs obligatoires avec `NOT NULL`
-	- Si le champ n'existe pas :
-		```
-			CREATE TABLE `nom_de_la_table`
-			(
-				`id_user` SMALLINT(6) NOT NULL,
-				...
-			);
-		```
-	- Si le champ existe :
-		```
-			ALTER TABLE `users` MODIFY `id_user` SMALLINT(6) NOT NULL;
-		```
+###### Mettre des champs obligatoires avec `NOT NULL`
 
-- Mettre des valeurs par défaut dans les champs : `DEFAULT`
+- Si le champ n'existe pas :
+	```
+		CREATE TABLE `nom_de_la_table`
+		(
+			`id_user` SMALLINT(6) NOT NULL,
+			...
+		);
+	```
+- Si le champ existe :
+	```
+		ALTER TABLE `users` MODIFY `id_user` SMALLINT(6) NOT NULL;
+	```
 
-	- Si le champ n'existe pas :
-		```
-			CREATE TABLE `nom_de_la_table
-			(
-				...
-				`user_name` VARCHAR(65) DEFAULT ""
-				...
-			);
-		```
-		La valeur par défaut par être une chaîne de caractères, une fonction, un nombre, *etc*.
-	- Si le champ existe :
-		```
-			ALTER TABLE `users` SET DEFAULT "";
-		```
+###### Mettre des valeurs par défaut dans les champs : `DEFAULT`
 
-- Vérifier une valeur : `CHECK`
+- Si le champ n'existe pas :
+	```
+		CREATE TABLE `nom_de_la_table
+		(
+			...
+			`user_name` VARCHAR(65) DEFAULT ""
+			...
+		);
+	```
+	La valeur par défaut par être une chaîne de caractères, une fonction, un nombre, *etc*.
+- Si le champ existe :
+	```
+		ALTER TABLE `users` SET DEFAULT "";
+	```
 
-	- Si le champ n'existe pas :
-		```
-			CREATE TABLE `nom_de_la_table`
-			(
-				`id_user` SMALLINT(6) NOT NULL CHECK(id_user <= 1000);
-				...
-			);
-		```
-	- Si le champ existe :
-		```
-			ALTER TABLE `users` ADD CHECK(id_user <= 10000);
-		```
-	- Si plusieurs champs sont concernés :
-		```
-			ALTER TABLE `users` ADD CONSTRAINT nom_de_la_contrainte CHECK (champ1 + contrainte1 AND champ2 + contrainte2);
-		```
-	- Suppression d'une contrainte :
-		```
-			DROP CHECK nom_de_la_contrainte;
-		```
+###### Vérifier une valeur : `CHECK`
 
-- Mettre une contrainte unique, c'est-à-dire une valeur de champ unique avec `UNIQUE`
+- Si le champ n'existe pas :
+	```
+		CREATE TABLE `nom_de_la_table`
+		(
+			`id_user` SMALLINT(6) NOT NULL CHECK(id_user <= 1000);
+			...
+		);
+	```
+- Si le champ existe :
+	```
+		ALTER TABLE `users` ADD CHECK(id_user <= 10000);
+	```
+- Si plusieurs champs sont concernés :
+	```
+		ALTER TABLE `users` ADD CONSTRAINT nom_de_la_contrainte CHECK (champ1 + contrainte1 AND champ2 + contrainte2);
+	```
+- Suppression d'une contrainte :
+	```
+		DROP CHECK nom_de_la_contrainte;
+	```
+
+###### Mettre une contrainte unique, c'est-à-dire une valeur de champ unique avec `UNIQUE`
 
 Si la valeur n'est pas unique, donc elle existe déjà, il y a une erreur.
 - Si le champ n'existe pas :
@@ -324,7 +326,7 @@ Si la valeur n'est pas unique, donc elle existe déjà, il y a une erreur.
 		ALTER TABLE `users` DROP INDEX nom_de_la_contrainte;
 	```
 
-- Mettre une clé primaire `PRIMARY KEY`
+###### Mettre une clé primaire `PRIMARY KEY`
 
 La clé primaire est essentiellement utilisé pour les identifiants.
 ```
@@ -336,7 +338,7 @@ La clé primaire est essentiellement utilisé pour les identifiants.
 	);
 ```
 
-- Mettre une auto-incrémentation de un en un avec `AUTO_INCREMENT`
+###### Mettre une auto-incrémentation de un en un avec `AUTO_INCREMENT`
 
 La commande est :
 ```
@@ -350,21 +352,21 @@ La commande est :
 
 L'`entier` est facultatif. Il marque le premier nombre auto-incrémenté.
 
-- Ajouter une clé primaire dans un champ existant
+###### Ajouter une clé primaire dans un champ existant
 
 La commande est :
 ```
 	ALTER TABLE `users` ADD PRIMARY KEY (`id_user`);
 ```
 
-- Définir une clé primaire sur plusieurs champs
+###### Définir une clé primaire sur plusieurs champs
 
 La commande est :
 ```
 	ALTER TABLE `test` ADD CONSTRAINT nom_de_la_contrainte PRIMARY KEY (`id_user`, `user_name`);
 ```
 
-- Effacer une clé primaire
+###### Effacer une clé primaire
 
 La commande est :
 ```
@@ -374,42 +376,43 @@ La commande est :
 > [!WARNING]
 > **Il n'existe qu'une clé primaire par table. Elle peut se définir sur plusieurs champs**.
 
-- Lier des identifiants entre tables pour faire des jointures (avec des clés étrangères d'autres tables)
-	- Si les champs n'existent pas :
-		```
-			CREATE TABLE `nom_de_la_table`
-			(
-			...
-				FOREIGN KEY (`nom_de_la_table`) REFERENCES `nom_de_l_autre_table` (`nom_du_champ_de_la_clé_de_l_autre_table`)
-				options
-			);
-		```
-		-  `FOREIGN KEY` se place après les champs.
-		- Les options sont :
-			- `ON DELETE CASCADE` $\rightarrow$ supprimer en cascade lorsque les tables sont liées ;
-			- `ON DELETE RESTRICT` $\rightarrow$ empêcher la suppression de tables liées ;
-			- `ON UPDATE CASCADE` $\rightarrow$ cas de modification de la référence ;
-			- `ON DELETE NO ACTION` ;
-			- `ON DELETE SET NULL` $\rightarrow$ mettre `NULL` dans les valeurs sans clés.
-	- Si les champs existent :
-		```
-			ALTER TABLE `users` FOREIGN KEY (`nom_du_champ_de_la_table`) REFERENCES `nom_de_l_autre_table` (`nom_du_champ_de_la_clé_de_l_autre_table`);
-		```
-	ou
+###### Lier des identifiants entre tables pour faire des jointures (avec des clés étrangères d'autres tables)
 
-		```
-			ALTER TABLE `users` ADD CONSTRAINT `nom_de_la_contrainte` FOREIGN KEY (`nom_du_champ_de_la_table`) REFERENCES `nom_de_l_autre_table` (`nom_du_champ_de_la_clé_de_l_autre_table`);
-		```
-	
-	- Suppression de la clé étrangère :
-		```
-			ALTER TABLE `users` DROP FOREIGN KEY `nom_de_la_contrainte`;
-		```
+- Si les champs n'existent pas :
+	```
+		CREATE TABLE `nom_de_la_table`
+		(
+		...
+			FOREIGN KEY (`nom_de_la_table`) REFERENCES `nom_de_l_autre_table` (`nom_du_champ_de_la_clé_de_l_autre_table`)
+			options
+		);
+	```
+	-  `FOREIGN KEY` se place après les champs.
+	- Les options sont :
+		- `ON DELETE CASCADE` $\rightarrow$ supprimer en cascade lorsque les tables sont liées ;
+		- `ON DELETE RESTRICT` $\rightarrow$ empêcher la suppression de tables liées ;
+		- `ON UPDATE CASCADE` $\rightarrow$ cas de modification de la référence ;
+		- `ON DELETE NO ACTION` ;
+		- `ON DELETE SET NULL` $\rightarrow$ mettre `NULL` dans les valeurs sans clés.
+- Si les champs existent :
+	```
+		ALTER TABLE `users` FOREIGN KEY (`nom_du_champ_de_la_table`) REFERENCES `nom_de_l_autre_table` (`nom_du_champ_de_la_clé_de_l_autre_table`);
+	```
+ou
+
+	```
+		ALTER TABLE `users` ADD CONSTRAINT `nom_de_la_contrainte` FOREIGN KEY (`nom_du_champ_de_la_table`) REFERENCES `nom_de_l_autre_table` (`nom_du_champ_de_la_clé_de_l_autre_table`);
+	```
+
+- Suppression de la clé étrangère :
+	```
+		ALTER TABLE `users` DROP FOREIGN KEY `nom_de_la_contrainte`;
+	```
 
 > [!NOTE]
 > Il faut casser les clés étrangères, sinon la suppression de la table n'est pas possible.
 
-- Utiliser un index qui enregistre l'arborescence de la table
+###### Utiliser un index qui enregistre l'arborescence de la table
 
 On peut mettre un index sur l'ensemble des champs comme sur un seul.
 
@@ -425,9 +428,9 @@ On peut mettre un index sur l'ensemble des champs comme sur un seul.
 		ALTER TABLE `users` DROP INDEX `nom_de_l_index`;
 	```
 
-##### Consulter les données (R)
+#### Consulter les données (R)
 
-###### Lecture des données
+##### Lecture des données
 
 On peut sélectionner :
 - un champ : ```SELECT `champ` FROM `table`;```
@@ -457,7 +460,7 @@ On peut donner des **alias** aux champs et aux tables.
 
 Les alias permettent d'abréger les requêtes longues.
 
-###### Filtrage des données avec WHERE
+##### Filtrage des données avec WHERE
 
 La commande est :
 ```
@@ -535,9 +538,9 @@ Il est possible de déterminer la ligne à partir de laquelle le choix est pris 
 
 - Tous les énièmes (nombre de `OFFSET`), on affiche les données suivantes.
 
-##### Modifier les données (U)
+#### Modifier les données (U)
 
-###### Enregistrement des données
+##### Enregistrement des données
 
 La commande est :
 ```
@@ -552,7 +555,7 @@ Il est possible d'opérer plusieurs enregistrements en même temps.
 	INSERT INTO `table` (`champ1`, `champ2`, ...) VALUES (`valeur11`), (`valeur21`), ...;
 ```
 
-###### Modification des données
+##### Modification des données
 
 ```
 	UPDATE `table`
@@ -563,9 +566,9 @@ Il est possible d'opérer plusieurs enregistrements en même temps.
 > [!NOTE]
 > `WHERE` est une option. Sans la condition `WHERE`, on modifie tous les enregistrements.
 
-##### Supprimer des données (D)
+#### Supprimer des données (D)
 
-###### Effacer des entrées
+##### Effacer des entrées
 
 La commande est :
 ```
@@ -575,7 +578,7 @@ La commande est :
 > [!NOTE]
 > `WHERE` est une option qu'il faut éviter de mettre.
 
-###### Supprimer les données d'une table
+##### Supprimer les données d'une table
 
 La commande est :
 ```
@@ -587,18 +590,18 @@ ou
 	TRUNCATE `table`;
 ```
 
-###### Supprimer une table
+##### Supprimer une table
 
 La commande est :
 ```
 	DROP TABLE `table`;
 ```
 
-##### Rechercher des données (S)
+#### Rechercher des données (S)
 
-###### Les fonctions d'agrégation
+##### Les fonctions d'agrégation
 
-- Compter les entrées d'un champ
+###### Compter les entrées d'un champ
 
 La commande
 ```
@@ -608,7 +611,7 @@ La commande
 
 permet de fournir le nombre d'enregistrements d'une table.
 
-- Les fonctions d'agrégation
+###### Les fonctions d'agrégation
 
 `AVG(...)` calcule la moyenne d'un champ contenant des nombres.
 
@@ -629,16 +632,16 @@ permet de fournir le nombre d'enregistrements d'une table.
 
 `SELECT MAX(`champ`) FROM `table`;`
 
-###### Le groupement des résultats
+##### Le groupement des résultats
 
-- Grouper les données
+###### Grouper les données
 
 La commande est :
 ```
 	SELECT `champ1`, SUM(`champ2`) FROM `table` GROUP BY `champ1`;
 ```
 
-- Grouper les données d'un résultat avec des fonctions agrégées
+###### Grouper les données d'un résultat avec des fonctions agrégées
 
 La commande
 ```
@@ -668,18 +671,18 @@ permet de filtrer un regroupement. `HAVING` permet de filtrer les données. L'ex
 - `>=` ;
 - `<=`.
 
-- Grouper les données regroupées
+###### Grouper les données regroupées
 
 La commande est :
 ```
 	SELECT `champ1`, SUM(`champ2`) FROM `table` GROUP BY `champ1` HAVING conditions de la fonction;
 ```
 
-###### Les unions et les intersections
+##### Les unions et les intersections
 
 Il faut au moins deux tables avec le même nombre de colonnes, suivant le même ordre et ayant le même type de données.
 
-- Unir deux tables
+###### Unir deux tables
 
 La commande est :
 ```
@@ -691,7 +694,7 @@ L'union supprime les doublons.
 > [!WARNING]
 > Les enregistrements doivent être strictement identiques.
 
-- Unir deux tables entièrement
+###### Unir deux tables entièrement
 
 La commande est :
 ```
@@ -700,7 +703,7 @@ La commande est :
 
 L'union conserve tous les doublons.
 
-- Intersecter deux tables
+###### Intersecter deux tables
 
 La commande est :
 ```
@@ -709,7 +712,7 @@ La commande est :
 
 L'intersection fournit les enregistrements strictement identiques.
 
-- Obtenir le complément de deux tables
+###### Obtenir le complément de deux tables
 
 La commande est :
 ```
@@ -723,7 +726,7 @@ Le complément supprime tous les éléments présents dans la `table1` et dans l
 > [!NOTE]
 > La requête n'est pas universelle. Par exemple, elle n'existe pas dans `MySQL`.
 
-###### Les sous-requêtes
+##### Les sous-requêtes
 
 La commande est :
 ```
@@ -747,7 +750,7 @@ La commande
 
 impose qu'il existe de l'information dans la sous-requête.
 
-###### Les jointures
+##### Les jointures
 
 Il faut utiliser le **moteur** `InnoDB` afin d'utiliser les clés externes pour créer des **bases de données relationnelles**.
 
@@ -757,7 +760,7 @@ Les **jointures externes** sélectionnent toutes les données, même si certaine
 
 La jointure externe est plus complète, car elle est capable de récupérer plus d'informations, tandis que la jointure interne est plus stricte, car elle ne récupère que les données qui ont une équivalence dans l'autre table.
 
-- La jointure naturelle
+###### La jointure naturelle
 
 La commande est :
 ```
@@ -770,7 +773,7 @@ La commande est :
 > [!NOTE]
 > Les tables doivent avoir un nom de champ identique et avoir le même type de données.
 
-- Les jointures internes
+###### Les jointures internes
 
 La commande est :
 ```
@@ -785,7 +788,7 @@ ou
 > [!NOTE]
 > `ON` peut être remplacé par `WHERE`, mais cela est à éviter, car il existe un risque de conflits.
 
-- Les jointures externes
+###### Les jointures externes
 
 **Les jointures externes simples**
 
@@ -821,7 +824,7 @@ prend en compte tous les éléments des deux tables.
 > [!NOTE]
 > On peut créer `FULL JOIN` sur `UNION` sur `MySQL`.
 
-- La jointure croisée
+###### La jointure croisée
 
 La commande est :
 ```
@@ -830,7 +833,7 @@ La commande est :
 
 donne le produit cartésien des deux tables.
 
-###### Les fonctions sur les chaînes de caractères
+##### Les fonctions sur les chaînes de caractères
 
 La commande :
 ```
@@ -905,32 +908,35 @@ extrait des sous-chaînes.
 > [!NOTE]
 > Les fonctions sur les chaînes de caractères sont des **fonctions scalaires** qui sont temporaires. Il est conseillé de créer un champ spécifique.
 
+##### Les fonctions de gestion des dates
+
+###### Le format des dates
+
+- `%d` $\rightarrow$ jour
+- `%m` $\rightarrow$ mois
+- `%Y` $\rightarrow$ année
+- `%H` $\rightarrow$ heure
+- `%i` $\rightarrow$ minute
+- `%S` $\rightarrow$ seconde
+- *etc*.
+
+###### Les dates
+
+- `DATE` $\rightarrow$ `AAAA-MM-JJ`
+- `TIME` $\rightarrow$ `HH:MM:SS`
+- `DATETIME` $\rightarrow$ `AAAA-MM-JJ HH:MM:SS`
+- `TIMESTAMP` $\rightarrow$ `AAAAMMJJHHMMSS`
+- `YEAR` $\rightarrow$ `AA` ou `AAAA`
+
 ###### Les fonctions de gestion des dates
 
-- Le format des dates
-	- `%d` $\rightarrow$ jour
-	- `%m` $\rightarrow$ mois
-	- `%Y` $\rightarrow$ année
-	- `%H` $\rightarrow$ heure
-	- `%i` $\rightarrow$ minute
-	- `%S` $\rightarrow$ seconde
-	- *etc*.
-
-- Les dates
-	- `DATE` $\rightarrow$ `AAAA-MM-JJ`
-	- `TIME` $\rightarrow$ `HH:MM:SS`
-	- `DATETIME` $\rightarrow$ `AAAA-MM-JJ HH:MM:SS`
-	- `TIMESTAMP` $\rightarrow$ `AAAAMMJJHHMMSS`
-	- `YEAR` $\rightarrow$ `AA` ou `AAAA`
-
-- Les fonctions de gestion des dates
-	- `NOW()` $\rightarrow$ obtenir la date et l'heure
-	- `DAY()` $\rightarrow$ extraire le jour
-	- `MONTH()` $\rightarrow$ extraire le mois
-	- `YEAR()` $\rightarrow$ extraire l'année
-	- `HOUR()` $\rightarrow$ extraire les heures
-	- `MINUTE()` $\rightarrow$ extraire les minutes
-	 `SECOND()` $\rightarrow$ extraire les secondes
+- `NOW()` $\rightarrow$ obtenir la date et l'heure
+- `DAY()` $\rightarrow$ extraire le jour
+- `MONTH()` $\rightarrow$ extraire le mois
+- `YEAR()` $\rightarrow$ extraire l'année
+- `HOUR()` $\rightarrow$ extraire les heures
+- `MINUTE()` $\rightarrow$ extraire les minutes
+- `SECOND()` $\rightarrow$ extraire les secondes
 
 Exemples d'utilisation :
 	
@@ -943,14 +949,14 @@ Les commandes ne sont pas universelles :
 - `DATE('now')` ;
 - `GETDATE()`.
 
-### Les données spatiales
+## Les données spatiales
 
 `MySQL` implémente les données spatiales en suivant les spécifications de l'*Open G.I.S. Consortium* (O.G.C.). Il propose des **types géométriques** pour le S.Q.L. De plus, le langage possèdent des fonctions permettant leur création et leur analyse.
 - [http://www.opengis.org](http://www.opengis.org)
 
 Un **lieu géographique** (ou géospatial) représente tout ce qui dispose d'une localisation dans le monde. Il possède une **géométrie** : point, ligne, surface, volume... Ainsi, une géométrie est un ensemble de points représentant un endroit dans le monde.
 
-#### Les types géométriques
+### Les types géométriques
 
 Les types géométriques constituent un *Spatial Reference System* (S.R.S.) ou un *Coordinate Reference System* (C.R.S.). S'ils existent, l'O.G.C. indique `SQL with Geometry Types`.
 
@@ -971,7 +977,7 @@ Les classes géométriques sont hiérarchisées. Elles ne sont supportées que p
 	- `MULTISURFACE` (objet non instanciable)
 		- `MULTIPOLYGON` (objet instanciable)
 
-##### Les propriétés de `GEOMETRY`
+#### Les propriétés de `GEOMETRY`
 
 Un objet `GEOMETRY` a un **type** parmi les classes instanciables.
 
@@ -1004,7 +1010,7 @@ Il a une dimension :
 - ligne : 1 ;
 - surface : 2.
 
-##### Les formes géométriques supportées
+#### Les formes géométriques supportées
 
 Il existe deux formats :
 - *Well-Known Text* (W.K.T.) ;
@@ -1025,11 +1031,11 @@ Le W.K.T. est une représentation conçue pour effectuer des échanges au format
 
 Le W.K.B. est une représentation binaire obéissant au standard `OpenGIS` des valeurs géométriques.
 
-#### La création des objets géographiques
+### La création des objets géographiques
 
-##### Les fonctions permettant de créer des objets géographiques
+#### Les fonctions permettant de créer des objets géographiques
 
-###### Les fonctions W.K.T.
+##### Les fonctions W.K.T.
 
 `GeomFromText(` *type de géométrie* `,` *S.R.I.D.* `)` (ou `GeometryFromText(...)`) constitue une forme géométrique. Le S.R.I.D. est facultatif.
 
@@ -1047,7 +1053,7 @@ Le W.K.B. est une représentation binaire obéissant au standard `OpenGIS` des v
 
 `GeomCollFromText(...)` ou `GeometryCollectionFromText(...)`
 
-###### Les fonctions W.K.B.
+##### Les fonctions W.K.B.
 
 `GeomFromWKB(...)` ou `GeometryFromWKB(...)`
 
@@ -1065,7 +1071,7 @@ Le W.K.B. est une représentation binaire obéissant au standard `OpenGIS` des v
 
 `GeomCollFromWKB(...)` ou `GeometryCollectionFromWKB(...)`
 
-###### Les fonctions spécifiques de `MySQL`
+##### Les fonctions spécifiques de `MySQL`
 
 Le résultat de ces fonctions peut être utilisé comme premier argument de toute fonction de la famille W.K.B.
 - `Point(x, y)`
@@ -1076,9 +1082,9 @@ Le résultat de ces fonctions peut être utilisé comme premier argument de tout
 - `MultiPolygon(polygone1, polygone2, ...)`
 - `GeometryCollection(geometry1, geometry2, ...)`
 
-##### La création de champs géométriques
+#### La création de champs géométriques
 
-###### Créer une table géométrique
+##### Créer une table géométrique
 
 La commande est :
 ```
@@ -1090,7 +1096,7 @@ Les options sont :
 - ```SPATIAL INDEX(` ``` *nom de l'alias* ``` `), ```
 - `NOT NULL`
 
-###### Créer un point
+##### Créer un point
 
 La commande est :
 ```
@@ -1099,14 +1105,14 @@ La commande est :
 
 Le type de géométrie peut être un `POINT` par exemple.
 
-###### Supprimer un point
+##### Supprimer un point
 
 La commande est :
 ```
 	ALTER TABLE geom DROP `nom_de_la_forme`;
 ```
 
-###### Appliquer la commande
+##### Appliquer la commande
 
 La commande est :
 ```
@@ -1120,32 +1126,32 @@ La commande est :
 >	INSERT INTO geom VALUES(@forme);
 > ```
 
-#### La lecture des données géographiques
+### La lecture des données géographiques
 
-##### Lire au format `MySQL`
+#### Lire au format `MySQL`
 
 La commande est :
 ```
 	CREATE TABLE `nom_de_la_table_2` (g GEOMETRY) SELECT g FROM `nom_de_la_table_1`;
 ```
 
-##### Lire au format W.K.T.
+#### Lire au format W.K.T.
 
 La commande est :
 ```
 	SELECT AsText(g) FROM `nom_de_la_table`;
 ```
 
-##### Lire au format W.K.B.
+#### Lire au format W.K.B.
 
 La commande est :
 ```
 	SELECT AsBinary(g) FROM `nom_de_la_table`;
 ```
 
-#### L'analyse des données géographiques
+### L'analyse des données géographiques
 
-##### Convertir les formes de format
+#### Convertir les formes de format
 
 ```GeomFromText(` ``` *format W.K.T.*, *S.R.I.D.* ``` `) ```
 
@@ -1161,7 +1167,7 @@ La commande est :
 
 `AsBinary(...)` $\rightarrow$ `MySQL` vers W.K.B.
 
-##### Analyser les formes `GEOMETRY`
+#### Analyser les formes `GEOMETRY`
 
 ```GeometryType(` ``` *géométrie* ``` `) ``` retourne le type de forme sous la forme d'une chaîne de caractères.
 
@@ -1183,13 +1189,13 @@ La commande est :
 > 	- `0` : anomalie(s)
 > 	- `1` : OK
 
-###### Les points
+##### Les points
 
 `x(` *point* `)` retourne l'abscisse sous la forme d'un nombre à virgule en double précision.
 
 `y(` *point* `)` retourne l'ordonnée sous la forme d'un nombre à virgule en double précision.
 
-###### Les lignes
+##### Les lignes
 
 `EndPoint(` *ligne* `)` retourne le dernier point de la ligne.
 
@@ -1222,7 +1228,7 @@ La commande est :
 >	- `0` si elle n'est pas un anneau ;
 >	- `-1` si `NULL`.
 
-###### Les polygones
+##### Les polygones
 
 `Area(` *polygone* `)` retourne un nombre en double précision.
 
@@ -1233,15 +1239,15 @@ La commande est :
 
 `InteriorRingN(` *polygone* `,` *n* `)` retourne l'anneau placé à la position $n$ sous la forme d'une ligne à l'intérieur du polygone.
 
-###### Les fonctions particulières à `GeometryCollection`
+##### Les fonctions particulières à `GeometryCollection`
 
 `NumGeometrics(` *géométries* `)` retourne le nombre de formes géométriques contenues dans l'objet `GeometryCollection+.
 
 `Geometry(` *géométries* `,` *n* `)` retourne la forme située à la position $n$ de l'objet `GeometryCollection`.
 
-##### La génération de formes géométriques
+#### La génération de formes géométriques
 
-###### Les fonctions
+##### Les fonctions
 
 `Envelope()`
 
@@ -1257,7 +1263,7 @@ La commande est :
 
 `GeometryN()`
 
-###### Les opérateurs géométriques
+##### Les opérateurs géométriques
 
 Les opérateurs géométriques ne sont pas implémentés dans `MySQL`.
 - `Intersection(` *forme 1* `,` *forme 2* `)` retourne l'ensemble des points qui représentent l'intersection des deux formes.
@@ -1267,7 +1273,7 @@ Les opérateurs géométriques ne sont pas implémentés dans `MySQL`.
 - `Buffer(` *forme* `,` *distance* `)` retourne l'ensemble des points dont la distance à la forme est inférieure ou égale à la distance.
 - `ConvexHull(` *forme* `)` retourne l'enveloppe connexe de la forme.
 
-###### Les relations avec les enveloppes entre deux formes
+##### Les relations avec les enveloppes entre deux formes
 
 `MBRContains(` *forme 1* `,` *forme 2* `)` retourne `0` et `1` pour indiquer que l'enveloppe de la forme 1 contient l'enveloppe de la forme 2.
 
@@ -1283,7 +1289,7 @@ Les opérateurs géométriques ne sont pas implémentés dans `MySQL`.
 
 `MBRTouches(` *forme 1* `,` *forme 2* `)` retourne `0` et `1` pour indiquer que l'enveloppe de la forme 1 tocuhe l'enveloppe de la forme 2.
 
-###### Les tests concernant les relations géométriques entre deux formes
+##### Les tests concernant les relations géométriques entre deux formes
 
 `Contains(` *forme 1* `,` *forme 2* `)`
 
@@ -1308,7 +1314,7 @@ Les opérateurs géométriques ne sont pas implémentés dans `MySQL`.
 > [!NOTE]
 > Elles n'existent pas en `MySQL`. Il faut ajouter `ST_` devant les fonctions pour les tester en `MySQL`.
 
-#### Les systèmes de coordonnées géographiques
+### Les systèmes de coordonnées géographiques
 
 La commande est :
 ```
@@ -1334,9 +1340,8 @@ La commande est :
 > [!NOTE]
 > On peut lier la base `MySQL` avec un `ShapeFile`.
 
-### Le langage `NoSQL`
+## Le langage `NoSQL`
 
 Depuis les années 2000, les systèmes d'information géographique suivent la tendance du *Not only S.Q.L.*. Cela consiste à organiser les données, non pas sous une forme strictement relationnelle, mais sous une forme beaucoup plus souple.
 
 Dans ce domaine, le *JavaScript Object Notation* (J.S.O.N.) est le format qui domine. Dans le cadre des systèmes d'information géographique, un format spécifique a été créé, le `GeoJSON`.
-
