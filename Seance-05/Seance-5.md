@@ -523,6 +523,7 @@ Concernant le typage des champs, la règle S.Q.L. est de choisir le type le plus
 | BIGINT(*m*) | 8 octets | -2<sup>63</sup> à 2<sup>63</sup> - 1 | 0 à 2<sup>64</sup> - 1 |
 | DECIMAL(*m*, *d*) DEC(*m*, *d*) NUMERIC(*m*, *d*) FIXED(*m*, *d*) | 8 octets | jusqu’à 65 chiffres significatifs | jusqu’à 65 chiffres significatifs |
 | FLOAT(*m*, *d*) | 4 octets | -1,175494351 $\times$ 10<sup>38</sup> à 3,402823466 $\times$ 10<sup>38</sup> | 1,175494351 $\times$ 10<sup>38</sup> à 3,402823466 $\times$ 10<sup>38</sup> |
+
 **Tableau 1. Les types numériques**
 
 | **TYPE** | **TAILLE** | **LIMITE** |
@@ -535,6 +536,7 @@ Concernant le typage des champs, la règle S.Q.L. est de choisir le type le plus
 | LONGTEXT LONGBLOB | *m* + 4 | 4 294 967 295 caractères / octets |
 | SET | 1, 2, 3 4 ou 8 octets | 8, 16, 24, 32 ou 64 octects |
 | ENUM | 1 ou 2 octets | 255 ou 65 535 octets |
+
 **Tableau 2. Les types de chaînes de caractères**
 
 | **TYPE** | **TAILLE** | **LIMITE** |
@@ -544,6 +546,7 @@ Concernant le typage des champs, la règle S.Q.L. est de choisir le type le plus
 | DATETIME | 8 octets | 1000-01-01 00:00:00 à 9999-12-31 23:59:59 |
 | YEAR | 1 octet | 1901 à 2155 |
 | TIMESTAMP | 4 octets |  19700101000000 à 20380119031407 |
+
 **Tableau 3. Les types pour les dates**
 
 - Insérer des commentaires
