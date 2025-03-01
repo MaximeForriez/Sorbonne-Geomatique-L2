@@ -2,10 +2,10 @@
 
 - C.M./T.D. Notions avancées du JavaScript
 
-	- Principes du D.O.M.
-	
 	- Formulaires
-	
+
+	- Principes du D.O.M.
+		
 	- Gestion des événements
 
 > [!WARNING] 

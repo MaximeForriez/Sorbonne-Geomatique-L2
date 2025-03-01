@@ -16,6 +16,8 @@ Pour effectuer les savoir-faire que vous devez acquérir, cette présentation ra
 
 ## Tâche 0 : Manipuler les fichiers `*.csv`
 
+Pourquoi manipuler les fichier `*.csv` plutôt que `*.xls` ?
+
 ## Tâche 1 : Savoir-faire un géoréférencement
 
 Le géoréférencement est la base de n'importe quel système d'information géographique. Lors de la séance 2, nous avons injecté des données sans distinguer la couche dessin des données attributaires. Comme expliquer en C.M., cette pratique est à éviter. De fait, il faut bien séparer informations géométriques et informations attributaires. Le géoréférencement permet de réaliser le traitement des informations géométriques.
