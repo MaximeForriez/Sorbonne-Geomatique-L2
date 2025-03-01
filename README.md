@@ -34,11 +34,11 @@ Le plan du cours a été compacté, car les séances du 1<sup>er</sup> et 8 mai 
 
 ### [Séance 4. La conception de base de données avec M.E.R.I.S.E.](./Seance-04/Seance-4.md) [20/02/2025]
 
-### [Séance 5. Le langage S.Q.L. (1)](./Seance-05/Seance-5.md) [06/03/2025]
+### [Séance 5. Les requêtes S.Q.L.](./Seance-05/Seance-5.md) [06/03/2025]
 
 ### [Séance 6. Notions avancées du JavaScript](./Seance-06/Seance-6.md) [13/03/2025]
 
-### [Séance 7. Le langage S.Q.L. (2)](./Seance-07/Seance-7.md) [Application sur votre projet]
+### [Séance 7. Le langage S.Q.L.](./Seance-07/Seance-7.md) [Approfondissement]
 
 ### [Séance 8. La cartographie assistée par ordinateur (C.A.O.)](./Seance-08/Seance-8.md) [20/03/2025]
 
