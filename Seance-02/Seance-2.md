@@ -210,11 +210,92 @@ Les groupes, le contenu et l'organisation regroupent les informations concernant
 
 ## Prise en main de `Q-GIS`
 
+## Exercice : Introduire des données
 
+### Convertir des données avec `Q-GIS`
 
+`ArcGIS Online` ne lit pas les données *shapefile* (`*.shp`). Il faut par conséquent les convertir. Le logiciel idéal pour le faire est `Q-GIS`.
 
+#### Lire un fichier *shapefile*
 
+1. Lire une couche vectorielle
 
+![Lire une couche vectorielle](./Q-GIS/Ouvrir-une-couche-vectorielle-Q-GIS-Etape-01.png)
 
+2. Pour ouvrir une ou plusieurs couches, on faut **impérativement cliquer sur « Parcourir »**.
 
+![Lire une couche vectorielle](./Q-GIS/Ouvrir-une-couche-vectorielle-Q-GIS-Etape-02.png)
 
+3. Aller dans le dossier contenant le fichier
+
+![Lire une couche vectorielle](./Q-GIS/Ouvrir-une-couche-vectorielle-Q-GIS-Etape-03.png)
+
+4. Cliquer sur « Ouvrir »
+
+![Lire une couche vectorielle](./Q-GIS/Ouvrir-une-couche-vectorielle-Q-GIS-Etape-04.png)
+
+#### Convertir les données
+
+1. Faire un clic droit sur la couche que l'on souhaite convertir
+
+![Convertir des données](./Q-GIS/Convertir-une-couche-vectorielle-Q-GIS-Etape-01.png)
+
+2. Dans la fenêtre qui s'affiche, choisir le format et le système de coordonnées géographiques deréférence, puis cliquer sur « Parcourir » pour donner un nom au fichier converti.
+
+![Convertir des données](./Q-GIS/Convertir-une-couche-vectorielle-Q-GIS-Etape-02.png)
+
+3. Choisir le nom du fichier converti
+
+![Convertir des données](./Q-GIS/Convertir-une-couche-vectorielle-Q-GIS-Etape-03.png)
+
+4. Cliquer sur « OK »
+
+![Convertir des données](./Q-GIS/Convertir-une-couche-vectorielle-Q-GIS-Etape-04.png)
+
+### Intégrer une couche sur `ArcGIS Online`
+
+1. À gauche, aller dans l'onglet « Couches », cliquer sur la flèche vers le bas « Ajouter », puis sélectionner « Ajouter une couche à partir d'un fichier »
+
+![Insérer une couche sur ArcGIS Online](./ArcGIS%20Online/01-Creer%20une%20couche%20a%20partir%20d%20un%20fichier.png)
+
+2. Sélectionner « Votre appareil »
+
+![Insérer une couche sur ArcGIS Online](./ArcGIS%20Online/02-Creer%20une%20couche%20a%20partir%20d%20un%20fichier.png)
+
+3. Choisir les données, ici `preservatifs.kml`, le fichier créé avec `Q-GIS`
+
+![Insérer une couche sur ArcGIS Online](./ArcGIS%20Online/03-Creer%20une%20couche%20a%20partir%20d%20un%20fichier.png)
+
+4. La fenêtre « Ajouter une couche » s'ouvre. Paramétrer les métadonnées demandées.
+
+![Insérer une couche sur ArcGIS Online](./ArcGIS%20Online/04-Creer%20une%20couche%20a%20partir%20d%20un%20fichier.png)
+
+5. Une fois validée, la couche `preservatifs.kml` s'affiche à l'écran.
+
+![Insérer une couche sur ArcGIS Online](./ArcGIS%20Online/05-Creer%20une%20couche%20a%20partir%20d%20un%20fichier.png)
+
+## Gestion des données sur `ArcGIS Online` : supprimer les données non utilisées
+
+1. Aller dans l'onglet en haut `Contenu`
+
+![Gestion des données sur ArcGIS Online](./ArcGIS%20Online/Gerer-les-couches-ArcGIS-Online-Etape-01.png)
+
+2. Sélectionner les couches que l'on veut supprimer et cliquer sur « Supprimer »
+
+![Gestion des données sur ArcGIS Online](./ArcGIS%20Online/Gerer-les-couches-ArcGIS-Online-Etape-02.png)
+
+3. Valider la suppression
+
+![Gestion des données sur ArcGIS Online](./ArcGIS%20Online/Gerer-les-couches-ArcGIS-Online-Etape-03.png)
+
+4. À droite, cliquer sur « Corbeille »
+
+![Gestion des données sur ArcGIS Online](./ArcGIS%20Online/Gerer-les-couches-ArcGIS-Online-Etape-04.png)
+
+5. Cliquer sur les fichiers à supprimer définitivement, cliquer sur « Plus » pour cliquer sur « Supprimer définitivement »
+
+![Gestion des données sur ArcGIS Online](./ArcGIS%20Online/Gerer-les-couches-ArcGIS-Online-Etape-05.png)
+
+6. Valider la suppression définitive
+
+![Gestion des données sur ArcGIS Online](./ArcGIS%20Online/Gerer-les-couches-ArcGIS-Online-Etape-06.png)
