@@ -255,34 +255,25 @@ Téléchargeons la couche des arrondissements de Paris.
 
 ### Avec `ArcGIS Online`
 
+Pour charger la couche sur les arrondissements de Paris sur `ArcGIS Online`, il faut convertir les données *shapefile* en `*.geojson` en appliquant la méthode sur `Q-GIS` que l'on a vue en [séance 2](../Seance-02/Seance-2.md). En effet, le fichier `GeoJSON` permet de mieux conserver les polygones de la couche initiale.
 
+1. Charger la couche `arrondissements.geojson` que vous avez créée dans `Q-GIS`. Il faudra changer le nom de la couche, car il existe déjà des couches sur les arrondissements de Paris enregistrées dans l'application `ArcGIS Online`.
 
+2. À droite, aller dans l'onglet « Analyses », cliquer sur « Synthétiser des localisation », puis sur « Joindre des entités »
 
+![Requête spatiale](./ArcGIS%20Online/Requete-spatiale-ArcGIS-Online-Etape-01.png)
 
+3. Le menu obtenu vous est déjà connu.
 
+![Requête spatiale](./ArcGIS%20Online/Requete-spatiale-ArcGIS-Online-Etape-02.png)
 
+4. On paramètre la requête spatiale. Ici, on souhaite que les polygones n'ayant pas de points affichent la valeur `0`. La jointure est de fait **à gauche**.
 
+![Requête spatiale](./ArcGIS%20Online/Requete-spatiale-ArcGIS-Online-Etape-03.png)
 
+5. On clique sur la couche que l'on vient de créer, et un attribut `Join_Count` a été créé. Il matérialise le nombre de distributeurs par arrondissement.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![Requête spatiale](./ArcGIS%20Online/Requete-spatiale-ArcGIS-Online-Etape-04.png)
 
 ## Tâche 4 : Savoir-faire une statistique spatiale
 
@@ -324,36 +315,37 @@ On a compté les distributeurs par arrondissement. Maintenant, peut-on spatialis
 
 ### Avec `ArcGIS Online`
 
+1. Aller sur l'onglet à droite « Style »
 
+![Statistique spatiale](./ArcGIS%20Online/Statistique-spatiale-ArcGIS-Online-Etape-01.png)
 
+2. Sélectionner le champ `Join_Count`
 
+![Statistique spatiale](./ArcGIS%20Online/Statistique-spatiale-ArcGIS-Online-Etape-02.png)
 
+3. Paramétrer vos cercles proportionnels. Automatiquement, `ArcGIS Online` sélectionne la bonne sémiologie graphique, mais vous devez obligatoirement vérifier le choix du logiciel.
 
+![Statistique spatiale](./ArcGIS%20Online/Statistique-spatiale-ArcGIS-Online-Etape-03.png)
 
+4. Le résultat est directement visible sur la carte.
 
+![Statistique spatiale](./ArcGIS%20Online/Statistique-spatiale-ArcGIS-Online-Etape-04.png)
 
+5. Organiser les couches
 
+![Statistique spatiale](./ArcGIS%20Online/Statistique-spatiale-ArcGIS-Online-Etape-05.png)
 
+6. Afficher la légende grâce à l'onglet gauche « Légende »
 
+![Statistique spatiale](./ArcGIS%20Online/Statistique-spatiale-ArcGIS-Online-Etape-06.png)
 
+## Conclusion : `Q-GIS` ou `ArcGIS Online` ?
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Les manipulations sont rendues un peu plus complexes ou verbeuses sur `ArcGIS Online`, mais vous pouvez constater que l'on peut opérer les mêmes manipulations S.Q.L. que l'on soit sur `Q-GIS` ou sur `ArcGIS Online`.
 
 ## Approfondissement : les requêtes S.Q.L. en console
+
+`ArcGIS Online` et `Q-GIS` donnent accès aux requêtes S.Q.L. sous la forme d'une console.
 
 ### Ressources
 
@@ -362,3 +354,5 @@ On a compté les distributeurs par arrondissement. Maintenant, peut-on spatialis
 - [Cours de `SQL`](https://www.youtube.com/watch?v=3KwmNNucIjA&list=PLrSOXFDHBtfGl66sXijiN8SU9YJaM_EQg)
 
 - [Approfondissement sur le `SQL`](https://www.youtube.com/watch?v=jxSgB4UQiY0&list=PLrSOXFDHBtfHxLnX_BvHrcKkLh8sBRcHe)
+
+### 
