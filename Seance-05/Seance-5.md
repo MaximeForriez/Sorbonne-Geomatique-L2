@@ -14,9 +14,25 @@
 
 Pour effectuer les savoir-faire que vous devez acquérir, cette présentation rapide des requêtes S.Q.L. par défaut sur n'importe quel logiciel de géomatique, vous montre comment faire sur `Q-GIS` et `ArcGIS Online`.
 
+> [!NOTE]
+> Ne jamais travailler directement sur les données d'origine. Toujours travailler sur une copie.
+
+## Ressources
+
+- `Q-GIS` : [https://tutoqgis.cnrs.fr](https://tutoqgis.cnrs.fr)
+
+## Tâche 0 : Utiliser `ChatGPT` correctement
+
+[https://chatgpt.com](https://chatgpt.com)
+1. « Agis comme un géomaticien »
+2. « Écrire un projet en géomatique sur les pierres tombales »
+3. « Créer un *story map* ArcGIS Online sur les pierres tombales dans le cadre d'une approche géomatique »
+
 ## Tâche 0 : Manipuler les fichiers `*.csv`
 
 Pourquoi manipuler les fichier `*.csv` plutôt que `*.xls` ?
+
+C.S.V. signifie « *Common-Separated Values* ».
 
 ## Tâche 1 : Savoir-faire un géoréférencement
 
