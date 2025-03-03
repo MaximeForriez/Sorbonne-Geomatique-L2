@@ -28,6 +28,10 @@ Pour effectuer les savoir-faire que vous devez acquérir, cette présentation ra
 2. « Écrire un projet en géomatique sur les pierres tombales »
 3. « Créer un *story map* ArcGIS Online sur les pierres tombales dans le cadre d'une approche géomatique »
 
+> [!WARNING]
+> L'intelligence artificielle peut écrire n'importe quoi. On appelle ce phénomène une **hallucination**.
+> Exemple : [https://www.youtube.com/watch?v=MtucJ2MnUh4](https://www.youtube.com/watch?v=MtucJ2MnUh4)
+
 ## Tâche 0 : Manipuler les fichiers `*.csv`
 
 Pourquoi manipuler les fichier `*.csv` plutôt que `*.xls` ?
