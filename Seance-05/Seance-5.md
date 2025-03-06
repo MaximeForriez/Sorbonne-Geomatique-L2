@@ -34,9 +34,50 @@ Pour effectuer les savoir-faire que vous devez acquérir, cette présentation ra
 
 ## Tâche 0 : Manipuler les fichiers `*.csv`
 
-Pourquoi manipuler les fichier `*.csv` plutôt que `*.xls` ?
+Pourquoi manipuler les fichiers `*.csv` plutôt que `*.xls` ?
 
 C.S.V. signifie « *Common-Separated Values* ».
+
+Les fichiers C.S.V. sont des fichiers universels, tandis que les fichiers Excel sont un format propriétaire. Ce statut dernier n'est pas pratique pour manipuler les données.
+
+Prenons l'exemple de coordonnées géographiques compilées avec un mot-clé, ici `coordinates("...")`.
+
+1. Sélectionner la colonne dans laquelle les données sont agrégées.
+
+![](./XLS/Excel-05.png)
+
+2. Cliquer sur « Recherche et sélectionner », puis « Remplacer par... »
+
+![](./XLS/Excel-06.png)
+
+3. Ici, on va modifier trois éléments :
+	- `coordinates("` par rien, car on veut supprimer les valeurs ;
+	- `")` par rien, car on veut supprimer les valeurs ;
+	- `" "`, l'espace entre la latitude et la longitude par un `;`.
+
+![](./XLS/Excel-07.png)
+
+4. Changer le titre du champ `Coordonnées` par `Latitude;Longitude`.
+
+Pour enregistrer les données du tableur en C.S.V., il faut :
+
+1. Aller dans « Fichier »
+
+![](./XLS/Excel-01.png)
+
+2. Cliquer sur « Exporter », puis « Modifier le type de fichier »
+
+![](./XLS/Excel-02.png)
+
+3. Sélectionner « C.S.V. (séparateur : point-virgule) (.csv) », puis sur « Enregistrer sous »
+
+![](./XLS/Excel-03.png)
+
+4. Choisir le type de fichier « (séparateur : point-virgule) (.csv) »
+
+![](./XLS/Excel-04.png)
+
+5. Cliquer sur « Enregistrer »
 
 ## Tâche 1 : Savoir-faire un géoréférencement
 
