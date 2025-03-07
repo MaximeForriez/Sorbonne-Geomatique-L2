@@ -1074,7 +1074,7 @@ Tous les résultats des méthodes sont par défaut en **radians**.
 - Le nombre obtenu doit être multiplié par un autre pour couvrir un autre intervalle.
 - Le nombre obtenu peut être manipulé avec `parseInt()` ou `parseFloat()`.
 
-`Math.hypot(a, b, c, ..., z)` calcule $\sqrt{a^2 + b^2 + c^2 + \ldots{} + z^2}$.
+`Math.hypot(a, b, c, ..., z)` calcule $\sqrt{a^2 + b^2 + c^2 + ... + z^2}$.
 
 ###### Les méthodes statiques des nombres binaires
 
@@ -1647,7 +1647,7 @@ for(let i = 0 ; i < table.length ; i++)
  ou
 
 ```
-let table = [ [\ldots{}, \ldots{}, \ldots{}, \ldots{}], [\ldots{}, \ldots{}, \ldots{}, \ldots{}], [\ldots{}, \ldots{}, \ldots{}, \ldots{}], [\ldots{}, \ldots{}, \ldots{}, \ldots{}], [\ldots{}, \ldots{}, \ldots{}, \ldots{}], [\ldots{}, \ldots{}, \ldots{}, \ldots{}], [\ldots{}, \ldots{}, \ldots{}, \ldots{}], [\ldots{}, \ldots{}, \ldots{}, \ldots{}] ];
+let table = [ [..., ..., ..., ...], [..., ..., ..., ...], [..., ..., ..., ...], [..., ..., ..., ...], [..., ..., ..., ...], [..., ..., ..., ...], [..., ..., ..., ...], [..., ..., ..., ...] ];
 ```
 
 Pour visualiser la table multidimensionnelle, on utilise une double boucle.
