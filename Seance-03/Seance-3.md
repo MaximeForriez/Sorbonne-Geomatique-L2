@@ -102,7 +102,7 @@ Il existe deux manières de construire des chaînes de caractères.
 > [!NOTE]
 > Pour introduire des guillemets, il suffit d'écrire :
 > - soit `"` dans un `"` ;
-> - soit `\'` dans un `'`.
+> - soit `'` dans un `'`.
 
 > [!NOTE]
 > On utilise `\\` pour un *backslash*.
