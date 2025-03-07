@@ -31,7 +31,7 @@
     - Recommandation pour les débutants : [`NotePad++`](https://notepad-plus-plus.org/downloads/)
     - Recommandation pour les autres : [`Visual Studio Code`](https://code.visualstudio.com/download/)
 
-## Story Map
+## *Story Map*
 
 - [Comment créer un *story map*](https://cartovista.com/fr/debuter-avec-les-story-maps-comment-creer-une-story-map/)
 - [Exemple de *story map*](https://storymaps.arcgis.com/stories/)
@@ -111,7 +111,7 @@ Un projet peut être vue comme une idée. Selon le test d'Everett Rodgers (1931-
 - elle implique un **degré d'efforts ou d'investissements** à consentir rien que pour l'essayer ;
 - elle doit avoir un avantage relatif **plus facile à mesurer** que les autres.
 
-[Le test d'Everett Rodgers](../Ressources/Gestion-de-projets.png)
+![Le test d'Everett Rodgers](../Ressources/Gestion-de-projets.png)
 
 ### Rédiger un dossier de conception
 
@@ -175,7 +175,7 @@ Ce suivi est opéré par les **indicateurs clés de performance** (I.C.P.)  (En 
 4. l'efficacité ;
 5. l'avancement.
 
-Il faut men œuvre le suivi des tâches **tout au long**}** du projet suivant la **méthode de gestion choisie** :
+Il faut men œuvre le suivi des tâches **tout au long** du projet suivant la **méthode de gestion choisie** :
 - soit séquentielle (méthode en silos) ;
 - soit itérative (méthode agile).
 
@@ -183,13 +183,13 @@ Le suivi consiste principalement **à organiser des réunions de travail en fran
 
 Il faut prévoir des procédures pour gérer les retards. Qui faut-il alerter ? le chef de projet ? le client ?
 
-#### Rédiger des rapports d'activité, de comptes rendus de réunion, \textit{etc}.
+#### Rédiger des rapports d'activité, de comptes rendus de réunion, *etc*.
 
 La rédaction doit être réalisée soit en français, soit en anglais. Cela doit être défini par le cahier des charges. La plupart des rapports d'activité sont courts (de quelques lignes à 2 pages). Les comptes rendus de réunion sont nécessaires afin de garder une trace écrite de ce qui a été dit. Cela permet de corriger les orientations du projet si nécessaire.
 
 ### Définir les livrables
 
-La rédaction des livrables doit être réalisée soit en français, soit en anglais. Il peut s'agir de rapports, de notices, d'utilisation, \textit{etc}.
+La rédaction des livrables doit être réalisée soit en français, soit en anglais. Il peut s'agir de rapports, de notices, d'utilisation, *etc*.
 
 Les livrables en géomatique sont très variés. 
 
