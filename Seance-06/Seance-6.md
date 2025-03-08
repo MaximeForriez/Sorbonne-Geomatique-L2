@@ -1,6 +1,6 @@
 # Notions avancées du `JavaScript`
 
-- C.M./T.D. Notions avancées du JavaScript
+- C.M./T.D. Notions avancées du `JavaScript`
 
 	- Formulaires et balises génériques du `HTML`
 

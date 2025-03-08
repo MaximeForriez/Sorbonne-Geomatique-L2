@@ -21,6 +21,8 @@ Pour effectuer les savoir-faire que vous devez acquérir, cette présentation ra
 
 - `Q-GIS` : [https://tutoqgis.cnrs.fr](https://tutoqgis.cnrs.fr)
 
+- Plugins de `Q-GIS` : [https://plugins.qgis.org/plugins](https://plugins.qgis.org/plugins)
+
 ## Tâche 0 : Utiliser `ChatGPT` correctement
 
 [https://chatgpt.com](https://chatgpt.com)
