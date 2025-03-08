@@ -34,6 +34,8 @@ Pour effectuer les savoir-faire que vous devez acquérir, cette présentation ra
 > L'intelligence artificielle peut écrire n'importe quoi. On appelle ce phénomène une **hallucination**.
 > Exemple : [https://www.youtube.com/watch?v=MtucJ2MnUh4](https://www.youtube.com/watch?v=MtucJ2MnUh4)
 
+« Dans la société de l'information, personne ne pense. Nous avons cru élimner le paper, mais c'est la réflexion que nous avons bannie. » (Ian Malcolm, *in* Michael Crichton, 1992, *Jurassic Parc*, trad. Patrick Berthon, Paris, Robert Laffont, p. 101)
+
 ## Tâche 0 : Manipuler les fichiers `*.csv`
 
 Pourquoi manipuler les fichiers `*.csv` plutôt que `*.xls` ?
