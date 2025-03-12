@@ -1,6 +1,6 @@
 # Cours de géomatique territoriale - Sorbonne Université - L2/S4 - GEOMAT (2024-2025)
 
-Le plan des séances est indicatif. En fonction des besoins, il pourra évoluer. `GitHub` étant un outil de *versionning*, il convient aux étudiants d'être attentif aux dates de mises à jour. Idéalement, il faut se rendre sur la plateforme toutes les semaines.
+Le plan des séances est indicatif. En fonction des besoins, il pourra évoluer. `GitHub` étant un outil de *versionning*, il convient aux étudiants d'être attentifs aux dates de mises à jour. Idéalement, il faut se rendre sur la plateforme toutes les semaines.
 
 Ce dépôt va progressivement contenir toutes les ressources des séances.
 - Orientations bibliographiques
@@ -48,25 +48,15 @@ Le plan du cours a été compacté, car les séances du 1<sup>er</sup> et 8 mai 
 
 ### [Séance 11. Encadrement et réalisation du projet](./Seance-11/Seance-11.md) [03/04/2025]
 
-### [Séance 12 - Évaluation finale (Oraux) - Groupe 2](./Seance-12/Seance-12.md) [10/04/2025]
+### [Séance 12. Encadrement et réalisation du projet](./Seance-12/Seance-12.md) [03/04/2025]
 
-> [!NOTE]
-> - Chaque groupe dispose de 10 minutes pour présenter son *Story Map*.
-> - La remise du rapport est prévue pour le 9 mai 2025 au plus tard à l'adresse suivante : **maxime.forriez@sorbonne-universite.fr**.
-> - Le rapport **doit** être en format *.pdf. Je n'ai pas de traitement de texte installé sur ma machine, si vous m'envoyez un format *.docx. Je ne pourrai pas le lire, donc 0/20.
-> - Le rapport peut être envoyé par l'intermédiaire d'une plateforme comme WeTransfer.
-
-### [Séance 12. Encadrement et réalisation du projet (Groupe 3)](./Seance-13/Seance-13.md) [03/04/2025]
-
-### [Séance 13 - Évaluation finale (Oraux) - Groupe 3](./Seance-12/Seance-12.md) [15/05/2025]
+### [Séance 13 - Évaluation finale (Oraux) - Groupes 2 et 3](./Seance-13/Seance-13.md) [15/05/2025]
 
 > [!NOTE]
 > - Chaque groupe dispose de 10 minutes pour présenter son *Story Map*.
 > - La remise du rapport est prévue pour le 9 mai 2025 à minuit au plus tard, soit une semaine avant votre oral, à l'adresse suivante : **maxime.forriez@sorbonne-universite.fr**.
 > - Le rapport **doit** être en format *.pdf. Je n'ai pas de traitement de texte installé sur ma machine, si vous m'envoyez un format `*.docx.` Je ne pourrai pas le lire, donc 0/20.
 > - Le rapport peut être envoyé par l'intermédiaire d'une plateforme comme WeTransfer.
-
-### [Séance 13 - Révisions - Groupe 2](./Seance-13/Seance-13.md) [15/05/2025]
 
 > [!WARNING]
 > Cette unité de formation est intégralement évaluée en contrôle continue.
