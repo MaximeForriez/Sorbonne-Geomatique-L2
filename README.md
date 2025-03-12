@@ -48,7 +48,7 @@ Le plan du cours a été compacté, car les séances du 1<sup>er</sup> et 8 mai 
 
 ### [Séance 11. Encadrement et réalisation du projet](./Seance-11/Seance-11.md) [03/04/2025]
 
-### [Séance 12. Encadrement et réalisation du projet](./Seance-12/Seance-12.md) [03/04/2025]
+### [Séance 12. Encadrement et réalisation du projet](./Seance-12/Seance-12.md) [10/04/2025]
 
 ### [Séance 13 - Évaluation finale (Oraux) - Groupes 2 et 3](./Seance-13/Seance-13.md) [15/05/2025]
 
