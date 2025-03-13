@@ -1,4 +1,4 @@
-# Les gares de R.E.R. à Paris
+# Les gares de R.E.R. C à Paris
 
 ## Porteurs
 
@@ -7,7 +7,7 @@
 
 ## Objectif(s) du projet
 
-Représenter les gares du R.E.E. pour comparer leurs fréquentations
+Représenter les gares du R.E.R. C pour comparer leurs fréquentations
 
 ## Description rapide du projet
 
