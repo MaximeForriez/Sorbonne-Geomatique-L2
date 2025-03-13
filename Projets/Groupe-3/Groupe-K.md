@@ -1,4 +1,4 @@
-# ?
+# Les cars jaunes à la Réunion
 
 ## Porteurs
 
@@ -7,8 +7,7 @@
 
 ## Objectif(s) du projet
 
-- Représenter à l’échelle régionale les fréquentations touristiques en France
-- Comparer les différents pôles touristique à travers mon projet
+- Répartition de la population par rapport aux stations
 
 ## Description rapide du projet
 
