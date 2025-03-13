@@ -2,7 +2,7 @@
 
 ## Porteurs
 
-- Lilian Hillyeh
+- Liilan Hillyeh
 - Romane Jean
 
 ## Objectif(s) du projet
