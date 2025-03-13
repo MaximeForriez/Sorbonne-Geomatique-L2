@@ -3,7 +3,7 @@
 ## Porteurs
 
 - Virgile Dion
-- Dasse Dahon
+- Mickaël Dahon
 
 ## Objectif(s) du projet
 

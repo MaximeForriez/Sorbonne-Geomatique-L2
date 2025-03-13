@@ -1,4 +1,4 @@
-# Le nombre et l'emplacement des édifices religieux
+# L'analyse et la cartographie des fontaines à boire de Paris
 
 ## Porteurs
 
@@ -7,7 +7,7 @@
 
 ## Objectif(s) du projet
 
-En quoi la disparité géographique des églises parisiennes influencet-t-elle leur fréquentation et leur attractivité touristique ?
+
 
 ## Description rapide du projet
 
