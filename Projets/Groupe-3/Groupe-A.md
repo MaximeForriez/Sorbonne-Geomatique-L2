@@ -4,6 +4,7 @@
 
 - Sanae Meharzi
 - Nina Ibourichene
+- Ma Drammeh
 
 ## Objectif(s) du projet
 

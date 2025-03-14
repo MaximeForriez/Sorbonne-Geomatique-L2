@@ -4,6 +4,7 @@
 
 - Gabriela Marrao
 - Thibault Chardon
+- Sahah Driza (?)
 
 ## Objectif(s) du projet
 
