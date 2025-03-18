@@ -24,7 +24,7 @@
 
 ## Installation de son environnement de travail
 
-- Ouverture d'un compte `ArcGIS On line` : [https://fl-su.maps.arcgis.com/home/index.html](https://fl-su.maps.arcgis.com/home/index.html)
+- Ouverture d'un compte `ArcGIS Online` : [https://fl-su.maps.arcgis.com/home/index.html](https://fl-su.maps.arcgis.com/home/index.html)
 - Téléchargement et installation de `Q-GIS` : [https://qgis.org/download/](https://qgis.org/download/)
 - Téléchargement et installation de `Mozilla Developer` : [https://www.mozilla.org/fr/firefox/developer/](https://www.mozilla.org/fr/firefox/developer/)
 - Téléchargement et installation d'un environnement de développement
@@ -33,7 +33,8 @@
 
 ## *Story Map*
 
-- [Comment créer un *story map*](https://cartovista.com/fr/debuter-avec-les-story-maps-comment-creer-une-story-map/)
+- [Comment créer un *story map* ?](https://cartovista.com/fr/debuter-avec-les-story-maps-comment-creer-une-story-map/)
+- [Comment créer un *story map* ?](https://learn.arcgis.com/fr/projects/share-the-story-of-an-expedition/) (Tutoriel officiel d'`ArcGIS`)
 - [Exemple de *story map*](https://storymaps.arcgis.com/stories/)
 - [Gestion de projet](https://www.youtube.com/watch?v=pB-JUTXGJSg&list=PLcOmJ-JvAV1f4OV0UiCKgdZohpf1xD7rf)
 

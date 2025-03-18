@@ -4,7 +4,7 @@
 
 	- Manipulation sur `Q-GIS`
 
-	- Manipulation sur `ArcGIS online`
+	- Manipulation sur `ArcGIS Online`
 
 ## Gérer les projections
 
@@ -57,41 +57,47 @@ Il faut souvent corriger le dessin sur un D.A.O. comme :
 `Q-GIS` offre deux possibilités pour sortir la carte dessinée par les couches :
 1. Menu `Projet`, puis `Exporter comme image...` ;
 2. Menu `Projet`, puis `Nouveau Compositeur d'impression`.
+3. Menu `Projet`, puis `Exporter DXF` (solution non recommandée)
 
 La première solution est inadaptée, car l'image produite n'a pas d'échelle cartographique, pas de légendes, *etc*. Elle est en format raster, donc inexploitable dans un logiciel de D.A.O.
 
-La seconde solution est complexe, mais elle permet d'obtenir un image vectorielle en `*.pdf` directement exploitable dans un logiciel de D.A.O.
+La deuxième solution est complexe, mais elle permet d'obtenir un image vectorielle en `*.pdf` directement exploitable dans un logiciel de D.A.O.
+
+0. Ordonner les couches et réaliser les outils de D.A.O. de `Q-GIS`
+
+![Exporter une carte `Q-GIS`](./Q-GIS/Q-GIS-Ecran-01.png)
+
 1. Menu `Projet`, puis `Nouveau Compositeur d'impression`
 
-![]()
+![Exporter une carte `Q-GIS`](./Q-GIS/Q-GIS-Ecran-02.png)
 
 2. Fenêtre `Titre du composeur`
 
-![]()
+![Exporter une carte `Q-GIS`](./Q-GIS/Q-GIS-Ecran-03.png)
 
 3. Fenêtre `Nom du composeur`
 
-![]()
+![Exporter une carte `Q-GIS`](./Q-GIS/Q-GIS-Ecran-04.png)
 
 - `Ajouter une nouvelle carte` (onglet à gauche), puis dans la zone blanche étirée votre carte à l'endroit désiré
 
-![]()
+![Exporter une carte `Q-GIS`](./Q-GIS/Q-GIS-Ecran-05.png)
 
 - `Ajouter une nouvelle étiquette` (onglet à gauche), puis dans la zone blanche étirée votre carte à l'endroit désiré
 
-![]()
-
 - `Ajouter une nouvelle légende` (onglet à gauche), puis dans la zone blanche étirée votre carte à l'endroit désiré
 
-![]()
+![Exporter une carte `Q-GIS`](./Q-GIS/Q-GIS-Ecran-06.png)
+
+![Exporter une carte `Q-GIS`](./Q-GIS/Q-GIS-Ecran-07.png)
 
 - `Ajouter une échelle graphique` (onglet à gauche), puis dans la zone blanche étirée votre carte à l'endroit désiré
 
-![]()
+![Exporter une carte `Q-GIS`](./Q-GIS/Q-GIS-Ecran-08.png)
+
+![Exporter une carte `Q-GIS`](./Q-GIS/Q-GIS-Ecran-09.png)
 
 - `Ajouter une flèche` (onglet à gauche), puis dans la zone blanche étirée votre carte à l'endroit désiré
-
-![]()
 
 - *etc*.
 
@@ -104,6 +110,40 @@ La seconde solution est complexe, mais elle permet d'obtenir un image vectoriell
 
 - Dans l'onglet du haut, il y a plein d'options dont `Exporter en PDF`. Une fois votre fichier exporté en P.D.F., vous pourrez le lire sur `Illustrator`, ou un autre logiciel de D.A.O. afin de rendre la carte conforme à la sémiologie graphique, notamment en plaçant l'orientation sur votre carte.
 
+![Exporter une carte `Q-GIS`](./Q-GIS/Q-GIS-Ecran-10.png)
+
+![Exporter une carte `Q-GIS`](./Q-GIS/Q-GIS-Ecran-11.png)
+
+Si on exporte les données en P.D.F., on récupère les données en cinq étapes.
+
+1. Ouvrir le fichier P.D.F., une modification des polices sera peut-être à approuver
+
+![](./Illustrator/Illustrator-Ecran-01.png)
+
+2. Tout sélectionner avec `ctrl` + `a`, puis décomposer votre image
+
+![](./Illustrator/Illustrator-Ecran-02.png)
+
+![](./Illustrator/Illustrator-Ecran-03.png)
+
+![](./Illustrator/Illustrator-Ecran-04.png)
+
+3. Tout sélectionner, puis dissocier les objets de votre image
+
+![](./Illustrator/Illustrator-Ecran-05.png)
+
+> [!WARNING]
+> Le fichier P.D.F. étant une image vectorielle, vous pouvez normalement la lire sous `Illustrator` ou tout autre logiciel de D.A.O. Néanmoins, la récupération des données peut être rendue difficile par la conversion des formats. Il existe d'autres possibilités pour sortir la carte :
+> - imprimer en P.D.F. (Menu `Composeur`, puis `Imprimer...`) ;
+> - exporter en S.V.G. ;
+> - exporter en image. Cette solution sera votre dernier recours si toutes les autres manipulations ont échouée.
+
+> [!TIP]
+> Peu importe la méthode de récupération, il faudra retravailler la sortie `Q-GIS` pour obtenir une **carte**.
+> - Travailler la légende (supprimer ou ajouter des éléments)
+> - Ajouter l'orientation (le nord généralement)
+> - *etc*.
+
 ### `ArcGIS Online`
 
-
+[Tutoriel officiel `ArcGIS`](https://learn.arcgis.com/fr/projects/export-a-map/)
