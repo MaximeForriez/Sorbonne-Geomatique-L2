@@ -1,0 +1,10 @@
+html,body{
+	height:100%;
+	width:100%;
+	padding:0px;
+	margin:20px;
+}
+#jsmap{
+	height: 500px;
+	width: 100%;
+}
