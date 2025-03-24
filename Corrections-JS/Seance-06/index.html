@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>Séance 6 - Gestion des événements en JS</title>
+	</head>
+	<body>
+		<h1>Séance 6 - Gestion des événements en JS</h1>
+		
+		<!--On crée un formulaire avec la balise <form>...</form>.-->
+		<form>
+			<input id="texte" type="text" placeholder="Ceci est une zone de texte"><br>
+		
+			<!--
+			- L'attribut value définit la valeur renvoyée. Dans cet exercice, il s'agit de la valeur à envoyer en console.
+			- L'attribut name permet de lier les boutons radio entre eux. S'il n'existe qu'un bouton radio, comme ici, vous ne pouvez pas le décocher. Pour y parvenir, il faudra créer un second bouton radio ayant le même attribut name, mais un attribut id différent et une valeur différente.
+			-->
+			<input id="radio" name="listederadio" type="radio" value="Radio">Ceci un bouton radio<br>
+			
+			<input id="case" type="checkbox" value="Case à cocher">Ceci est une case à cocher<br>
+
+			<select id="liste" size="2">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select><br>
+			
+			<input type="reset" name="Effacer les valeurs">
+			
+			<input type="submit" name="Soumettre les valeurs">
+		</form>
+		
+		<script src="index.js"></script>
+	</body>
+</html>
