@@ -6,6 +6,8 @@
 
 Cette séance vous propose de compléter des bouts de code `JavaScript` afin d'afficher vos cartes.
 
+[Le format GeoJSON](https://geojson.org/) (standard GeoJSON)
+
 ## Exercice 1. Localiser votre ordinateur et afficher ses coordonnées avec `OpenLayer`
 
 Dans un dossier, télécharger les fichiers communs `index.html`, `index.css` et le fichier `index.js` de l'exercice.
