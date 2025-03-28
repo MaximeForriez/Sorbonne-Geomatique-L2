@@ -44,9 +44,9 @@ Le plan du cours a été compacté, car les séances du 1<sup>er</sup> et 8 mai 
 
 ### [Séance 9. A.P.I. OpenLayers (1) - Prise en main](./Seance-09/Seance-9.md) [Lire la documentation chez vous avant de faire les exercices]
 
-### [Séance 10. A.P.I. OpenLayers (2) - Exercices](./Seance-10/Seance-10.md) [27/03/2025]
+### [Séance 10. Encadrement et réalisation du projet](./Seance-11/Seance-11.md) [Université bloquée - 27/03/2025]
 
-### [Séance 11. Encadrement et réalisation du projet](./Seance-11/Seance-11.md) [03/04/2025]
+### [Séance 11. A.P.I. OpenLayers (2) - Exercices](./Seance-10/Seance-10.md) [03/04/2025]
 
 ### [Séance 12. Encadrement et réalisation du projet](./Seance-12/Seance-12.md) [10/04/2025]
 
