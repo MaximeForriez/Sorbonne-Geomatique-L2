@@ -1347,3 +1347,24 @@ La commande est :
 Depuis les années 2000, les systèmes d'information géographique suivent la tendance du *Not only S.Q.L.*. Cela consiste à organiser les données, non pas sous une forme strictement relationnelle, mais sous une forme beaucoup plus souple.
 
 Dans ce domaine, le *JavaScript Object Notation* (J.S.O.N.) est le format qui domine. Dans le cadre des systèmes d'information géographique, un format spécifique a été créé, le `GeoJSON`.
+
+## Utilisation de la console S.Q.L. sur `Q-GIS`
+
+1. Aller dans l'onglet `Traitement` et cliquer sur `Boîte à outils`. `Boîte à outils de traitements` apparaît.
+
+![](./Q-GIS%20et%20SQL/SQL-01.png)
+
+2. Cliquer sur `Outils généraux pour les vecteurs`
+
+![](./Q-GIS%20et%20SQL/SQL-01.png)
+
+3. Cliquer sur `Exécuter SQL`
+
+![](./Q-GIS%20et%20SQL/SQL-01.png)
+
+4. La fenêtre `Outils généraux pour les vecteurs - Exécuter SQL` apparaît. Vous pouvez y être votre code S.Q.L.
+
+![](./Q-GIS%20et%20SQL/SQL-01.png)
+
+> [!WARNING]
+> Sous `Q-GIS`, les champs et les tables sont encapsulés avec un double guillement `"`, tandis que les chaînes de caractères sont encapsulées avec un guillemet simple `'`.
