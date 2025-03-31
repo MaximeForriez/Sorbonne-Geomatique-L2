@@ -170,7 +170,7 @@ Pour insérer des commentaire, on utilise :
 
 ###### Créer des tables (dans une base de données ouverte)
 
-Les **anti-codes** ` ` ` (l'accent grave) permettent d'entourer les noms des bases de données et les champs. Ils sont vivement recommander si les noms utilisés sont ceux du langage S.Q.L.
+Les **anti-codes** ` ` ` (l'accent grave) permettent d'entourer les noms des bases de données et les champs. Ils sont vivement recommandés si les noms utilisés sont ceux du langage S.Q.L.
 
 ```
 	CREATE TABLE IF NOT EXISTS `Users`
