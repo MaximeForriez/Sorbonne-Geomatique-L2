@@ -6,7 +6,12 @@
 
 Cette séance vous propose de compléter des bouts de code `JavaScript` afin d'afficher vos cartes.
 
-[Le format GeoJSON](https://geojson.org/) (standard GeoJSON)
+[Le format `GeoJSON`](https://geojson.org/) (standard `GeoJSON`)
+
+[Le topo `Wikipedia`](https://fr.wikipedia.org/wiki/GeoJSON)
+
+
+[L'explication du `GeoJSON`](https://www.infobelpro.com/fr/blog/format-geojson)
 
 ## Exercice 1. Localiser votre ordinateur et afficher ses coordonnées avec `OpenLayer`
 
