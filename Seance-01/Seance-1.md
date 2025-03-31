@@ -36,6 +36,7 @@
 - [Comment créer un *story map* ?](https://cartovista.com/fr/debuter-avec-les-story-maps-comment-creer-une-story-map/)
 - [Comment créer un *story map* ?](https://learn.arcgis.com/fr/projects/share-the-story-of-an-expedition/) (Tutoriel officiel d'`ArcGIS`)
 - [Exemple de *story map*](https://storymaps.arcgis.com/stories/)
+- [*Story map* - Tutoriel](https://www.youtube.com/watch?v=8MyUochOuac)
 - [Gestion de projet](https://www.youtube.com/watch?v=pB-JUTXGJSg&list=PLcOmJ-JvAV1f4OV0UiCKgdZohpf1xD7rf)
 
 ### Objectifs d'un *Story Map*
