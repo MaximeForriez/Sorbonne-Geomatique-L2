@@ -1348,7 +1348,9 @@ Depuis les années 2000, les systèmes d'information géographique suivent la te
 
 Dans ce domaine, le *JavaScript Object Notation* (J.S.O.N.) est le format qui domine. Dans le cadre des systèmes d'information géographique, un format spécifique a été créé, le `GeoJSON`.
 
-## Utilisation de la console S.Q.L. sur `Q-GIS`
+## `Q-GIS` et `SQL`
+
+### Utilisation de la console S.Q.L. sur `Q-GIS`
 
 1. Aller dans l'onglet `Traitement` et cliquer sur `Boîte à outils`. `Boîte à outils de traitements` apparaît.
 
@@ -1356,15 +1358,40 @@ Dans ce domaine, le *JavaScript Object Notation* (J.S.O.N.) est le format qui do
 
 2. Cliquer sur `Outils généraux pour les vecteurs`
 
-![](./Q-GIS%20et%20SQL/SQL-01.png)
+![](./Q-GIS%20et%20SQL/SQL-02.png)
 
 3. Cliquer sur `Exécuter SQL`
 
-![](./Q-GIS%20et%20SQL/SQL-01.png)
+![](./Q-GIS%20et%20SQL/SQL-03.png)
 
 4. La fenêtre `Outils généraux pour les vecteurs - Exécuter SQL` apparaît. Vous pouvez y être votre code S.Q.L.
 
-![](./Q-GIS%20et%20SQL/SQL-01.png)
+![](./Q-GIS%20et%20SQL/SQL-04.png)
 
 > [!WARNING]
 > Sous `Q-GIS`, les champs et les tables sont encapsulés avec un double guillement `"`, tandis que les chaînes de caractères sont encapsulées avec un guillemet simple `'`.
+
+5. Exemple. Faire une requête S.Q.L. d'une jointure attributaire à partir des fichiers `distributeurs-attribut.csv` et `distributeurs-coord.csv` utilisés en [séance 5](./Q-GIS%20et%20SQL/SQL-Exemple-Requete-d-une-jointure-attributaire-en-console.png)
+
+```
+	select * from "distributeurs-attribut" inner join "distributeurs-coord" on "distributeurs-attribut"."id" = "distributeurs-coord"."id";
+```
+> [!WARNING]
+> Comme les fichiers `distributeurs-attribut.csv` et `distributeurs-coord.csv` possèdent un même champ `id`, il faut préciser dans le requête la table à laquelle correspond le champ avec l'écriture `"distributeurs-attribut"."id"` et `"distributeurs-coord"."id"`.
+
+### Utilisation de requête sur une unique couche
+
+1. Cliquer avec le bouton droit de la souris sur une couche et sélectionner `Propriétés`
+
+![](./Q-GIS%20et%20SQL/SQL-Source-01.png)
+
+2. Cliquer sur l'onglet `Source`, puis sur le bouton `Constructeur de requêtes`
+
+![](./Q-GIS%20et%20SQL/SQL-Source-02.png)
+
+3. Dans la fenêtre `Constructeur de requêtes`, taper votre requête.
+
+![](./Q-GIS%20et%20SQL/SQL-Source-03.png)
+
+> [!WARNING]
+> Votre requête ne doit concerner que la couche sélectionnée.
