@@ -1,4 +1,6 @@
-Les solutions proposées ne sont que des propositions. En programmation, il existe plusieurs manières de coder un même résultat. Le meilleur résultat est celui contenant le moins de caractères. En effet, le nombre de caractères détermine le temps de calcul d'un programmme. Si vous avez trouvé d'autres solutions qui fonctionnenent, n'hésitez pas à me les transmettre.
+# Correction des trois séances de `JavaScript`
+
+Les solutions proposées ne sont que des propositions. En programmation, il existe plusieurs manières de coder un même résultat. Le meilleur résultat est celui contenant le moins de caractères. En effet, le nombre de caractères détermine le temps de calcul d'un programmme ; chaque caractère vaut 8 octets. Si vous avez trouvé d'autres solutions qui fonctionnenent, n'hésitez pas à me les transmettre.
 
 - [Séance d'initiation](./Seance-03/)
 

@@ -1,7 +1,7 @@
 # Le langage S.Q.L.
 
 `ArcGIS Online` et `Q-GIS` donnent accès aux requêtes S.Q.L. sous la forme d'une console.
-- `ÀrcGIS Online` : [https://doc.arcgis.com/fr/arcgis-online/reference/sql-agol.htm](https://doc.arcgis.com/fr/arcgis-online/reference/sql-agol.htm)
+- `ArcGIS Online` : [https://doc.arcgis.com/fr/arcgis-online/reference/sql-agol.htm](https://doc.arcgis.com/fr/arcgis-online/reference/sql-agol.htm)
 - `Q-GIS` : [https://tutoqgis.cnrs.fr/06_04_req_sql.php](https://tutoqgis.cnrs.fr/06_04_req_sql.php)
 
 S.Q.L. signifie *Structured Query Language*.
