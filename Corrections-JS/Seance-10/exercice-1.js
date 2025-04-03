@@ -179,8 +179,8 @@ let map;
 //Bien la placer après la déclaration de la variable déclencheur de l'événement
 (function()
 {
-	if(navigateurEnLigne)
-	{
+	// if(navigateurEnLigne)
+	// {
 		if(geolocalisation)
 		{
 			geolocalisation.getCurrentPosition(coordonnees,erreur,options);
@@ -190,12 +190,12 @@ let map;
 			let paragraphe1 = document.getElementById("para1");
 			paragraphe1.innerHTML = "Localisation indisponible !" + "<br>";
 		}
-		}
-		else
-		{
-			let paragraphe1 = document.getElementById("para1");
-			paragraphe1.innerHTML = "Navigateur hors ligne !" + "<br>";
-		}
+		// }
+		// else
+		// {
+			// let paragraphe1 = document.getElementById("para1");
+			// paragraphe1.innerHTML = "Navigateur hors ligne !" + "<br>";
+		// }
 	}
 )();
 
