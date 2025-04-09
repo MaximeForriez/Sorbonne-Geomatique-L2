@@ -36,7 +36,7 @@ Le plan du cours a été compacté, car les séances du 1<sup>er</sup> et 8 mai 
 
 ### [Séance 5. Les requêtes S.Q.L.](./Seance-05/Seance-5.md) [06/03/2025]
 
-### [Séance 6. Notions avancées du JavaScript](./Seance-06/Seance-6.md) [13/03/2025]
+### [Séance 6. Notions avancées du `JavaScript`](./Seance-06/Seance-6.md) [13/03/2025]
 
 ### [Séance 7. Le langage S.Q.L.](./Seance-07/Seance-7.md) [Approfondissement]
 
