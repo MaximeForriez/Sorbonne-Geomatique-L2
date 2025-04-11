@@ -35,7 +35,7 @@ Pour effectuer les savoir-faire que vous devez acquérir, cette présentation ra
 > Exemple : [https://www.youtube.com/watch?v=MtucJ2MnUh4](https://www.youtube.com/watch?v=MtucJ2MnUh4)
 > Explication : [https://www.youtube.com/watch?v=qX7RfX1tcXw](https://www.youtube.com/watch?v=qX7RfX1tcXw)
 
-« Dans la société de l'information, personne ne pense. Nous avons cru élimner le paper, mais c'est la réflexion que nous avons bannie. » (Ian Malcolm, *in* Michael Crichton, 1992, *Jurassic Parc*, trad. Patrick Berthon, Paris, Robert Laffont, p. 101)
+« Dans la société de l'information, personne ne pense. Nous avons cru éliminer le papier, mais c'est la réflexion que nous avons bannie. » (Ian Malcolm, *in* Michael Crichton, 1992, *Jurassic Parc*, trad. Patrick Berthon, Paris, Robert Laffont, p. 101)
 
 ## Tâche 0 : Manipuler les fichiers `*.csv`
 
