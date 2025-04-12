@@ -66,6 +66,7 @@ Le plan du cours a été compacté, car les séances du 1<sup>er</sup> et 8 mai 
 - Albrecht, Jochen, 2007, *Key Concepts & Techniques in G.I.S.*, London, Sage publications, 120 p.
 - Aschan-Leygonie, Christina, Cunty, Claire & Davoine, Paule-Annick, 2023, *Les systèmes d'information géographique. Principes, concepts et méthodes*, Paris, Armand Colin, 280 p.
 - Baptiste, Jean-Luc, 2012, *Merise. Guide Pratique. Modélisation des données et des traitements, manipulations avec le langage S.Q.L.*, Paris, Éditions ENI, 280 p. [Informatique technique]
+- Baurand, Frédéric, 2011, *Le langage SQL. Pratiques de base et concepts avancés*, Paris, Ellipses, 188 p. [Technosup - Les filières technologiques des enseignements supérieurs]
 - Bazin, Thomas, 2023, *PostGIS. Tous les ingrédients pour concocter un S.I.G. sur de bonnes bases*, Lille, D-BookeR, XII-522 p.
 - Bordin, Patricia, 2002, *S.I.G. Concepts, outils et données*, Paris, Lavoisier, 260 p.
 - Burrough, Peter A. & McDonnell, Rachael A., 1998, *Principles of geographical information systems*, New York, Oxford University Press, XIV-334 p.
