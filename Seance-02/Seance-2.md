@@ -210,6 +210,8 @@ Les groupes, le contenu et l'organisation regroupent les informations concernant
 
 ## Prise en main de `Q-GIS`
 
+[`Q-GIS` 4 arrive en octobre 2025](https://giscrack.com/qgis-4-a-renovated-version-on-the-way/).
+
 ## Exercice : Introduire des données
 
 ### Convertir des données avec `Q-GIS`
