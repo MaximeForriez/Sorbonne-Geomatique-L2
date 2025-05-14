@@ -4,6 +4,7 @@
 
 - Virgile Dion
 - Mickaël Dahon
+- Alexis Cohen
 
 ## Objectif(s) du projet
 
