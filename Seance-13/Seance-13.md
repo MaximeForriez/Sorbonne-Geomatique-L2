@@ -40,7 +40,7 @@ Les rapports sont notés sur une base de trente points.
 
 - Elle doit être formulée sous la forme d'une question fermée.
 
-### Présentation des objectifs du sujet (3 points)
+#### Présentation des objectifs du sujet (3 points)
 
 - Expliquer pourquoi il est nécessaire d'utiliser un S.I.G. pour résoudre le problème
 
@@ -56,7 +56,7 @@ Les rapports sont notés sur une base de trente points.
 
 - Manipulation(s) S.Q.L.
 
-### Gestion non technique des données
+### Gestion non technique des données (3 points)
 
 - Position par rapport au R.G.P.D.
 
@@ -66,7 +66,7 @@ Les rapports sont notés sur une base de trente points.
 
 - Description de la collecte des données
 
-### Évaluation du *story map* et de la cartographie
+### Évaluation du *story map* et de la cartographie (12 points)
 
 - Présentation du *story map* (1 point)
 
