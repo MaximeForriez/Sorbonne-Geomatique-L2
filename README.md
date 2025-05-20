@@ -30,7 +30,7 @@ Le plan du cours a été compacté, car les séances du 1<sup>er</sup> et 8 mai 
 
 ### [Séance 2.  Les systèmes d'information géographique et mise en route (2)](./Seance-02/Seance-2.md) [06/02/2025]
 
-### [Séance 3. Les commandes de base du langage `JavaScript` avec `Mozilla Developer`](./Seance-03/Seance-03.md) [13/02/2025]
+### [Séance 3. Les commandes de base du langage `JavaScript` avec `Mozilla Developer`](./Seance-03/Seance-3.md) [13/02/2025]
 
 ### [Séance 4. La conception de base de données avec M.E.R.I.S.E.](./Seance-04/Seance-4.md) [20/02/2025]
 

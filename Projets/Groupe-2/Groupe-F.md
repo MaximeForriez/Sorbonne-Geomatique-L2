@@ -3,7 +3,6 @@
 ## Porteurs
 
 - Gabriel Abanda
-- Mika Douy
 - Merlin Girard-Hautbout
 
 ## Objectif(s) du projet
