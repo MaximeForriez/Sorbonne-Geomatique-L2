@@ -205,7 +205,7 @@ La clôture du projet peut renvoyer à deux réalités.
 - Le projet a été **achevé**.
 
 Le chef de projet organise une **réunion post-projet** avec l'équipe pour évaluer les succès et les échecs du projet. Le bon chef de projet remercie son équipe.
-- Objectif : \textbf{améliorer et rationaliser le flux de travail pour un prochain projet}.
+- Objectif : **améliorer et rationaliser le flux de travail pour un prochain projet**.
 - Ordre du jour :
 	- les livrables
 	- les problèmes non résolus
