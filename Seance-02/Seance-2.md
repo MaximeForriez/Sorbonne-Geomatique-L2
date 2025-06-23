@@ -298,6 +298,6 @@ Les groupes, le contenu et l'organisation regroupent les informations concernant
 
 ![Gestion des données sur ArcGIS Online](./ArcGIS%20Online/Gerer-les-couches-ArcGIS-Online-Etape-05.png)
 
-6. Valider la suppression définitive
+6. Valider la suppression définitivement
 
 ![Gestion des données sur ArcGIS Online](./ArcGIS%20Online/Gerer-les-couches-ArcGIS-Online-Etape-06.png)
