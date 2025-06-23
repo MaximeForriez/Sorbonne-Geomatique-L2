@@ -1002,7 +1002,7 @@ Les méthodes statiques de `Math`
 
 `Math.LOG2E` $\rightarrow$ ${\log}_2 \left( e \right)$
 
-`Math.PI` $\rightarrow$ $ \pi $
+`Math.PI` $\rightarrow$ $\pi$
 
 `Math.SQRT1_2` $\rightarrow$ $\frac{1}{\sqrt{2}} = \frac{\sqrt{2}}{2} = \sqrt{\frac{1}{2}}$
 
