@@ -59,14 +59,14 @@ Un *story map* est utilisé dans les projets :
 
 Les objectifs de la réalisation d'un *story map* pour une organisation sont triples.
 1. **Sensibiliser**. Le *story map* permet de définir des priorités stratégiques.
-- **Convaincre**. Le *story map* permet de développer des arguments.
-- **Encourager à agir**. Le *story map* permet de conseiller non seulement sur les actions, mais également sur les impacts de ces actions.
+2. **Convaincre**. Le *story map* permet de développer des arguments.
+3. **Encourager à agir**. Le *story map* permet de conseiller non seulement sur les actions, mais également sur les impacts de ces actions.
 
 Pour réaliser un bon *story map*, quatre éléments sont à prendre en considération.
 1. **Le contexte**. Pour qui réalise-t-on le *story map* ? Quel message veut-on faire passer ? Il faut adapter le contenu géographique au public. Ici, le contexte est une analyse scientifique de type universitaire.
-- **L'efficacité**. Il s'agit d'avoir des informations de qualité. Il faut transmettre les informations les plus simples possibles.
-- **L'interaction**. Elle se matérialise avec des interactions multimédias (infobulles, graphiques, *etc*.). Il faut démontrer la significativité des informations.
-- **Le *design***. Il faut une conception visuelle agréable.
+2. **L'efficacité**. Il s'agit d'avoir des informations de qualité. Il faut transmettre les informations les plus simples possibles.
+3 **L'interaction**. Elle se matérialise avec des interactions multimédias (infobulles, graphiques, *etc*.). Il faut démontrer la significativité des informations.
+4 **Le *design***. Il faut une conception visuelle agréable.
 
 > [!NOTE]
 > La beauté étant très relative, il faut s'inspirer des *design* les plus utilisés au moment de la réalisation du projet.
@@ -178,7 +178,7 @@ Ce suivi est opéré par les **indicateurs clés de performance** (I.C.P.)  (En 
 4. l'efficacité ;
 5. l'avancement.
 
-Il faut men œuvre le suivi des tâches **tout au long** du projet suivant la **méthode de gestion choisie** :
+Il faut organiser le suivi des tâches **tout au long** du projet suivant la **méthode de gestion choisie** :
 - soit séquentielle (méthode en silos) ;
 - soit itérative (méthode agile).
 
@@ -230,7 +230,7 @@ Le **rapport de clôture** contient :
 - les leçons dégagées ;
 - les remerciements.
 
-Dans le cadre de votre évalutation, vous devez me rendre un rapport complet de clôture.
+Dans le cadre de votre évaluation, vous devez me rendre un rapport complet de clôture.
 
 ## Notation
 
