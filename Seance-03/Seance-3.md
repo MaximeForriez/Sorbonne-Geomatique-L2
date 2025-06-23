@@ -274,7 +274,7 @@ document.write("<br>");
 
 Toutefois, il faut éviter de l'utiliser pour des raisons de sécurité.
 
-Le typage est **faible** et **dynamique. Le type peut être :
+Le typage est **faible** et **dynamique**. Le type peut être :
 - `undefined` ;
 - `boolean` ;
 - `number` ;
@@ -619,7 +619,7 @@ Affichage : `2`
 	- `return "Max";` retourne une chaîne de caractères.
 	- `return alert("...")` retourne un événement.
 
-Exemple de la fonction carrée $ f \left( x \right) = x^2 $
+Exemple de la fonction carrée $f \left( x \right) = x^2$
 
 ```
 function f(x)
@@ -972,13 +972,13 @@ let bigInt = BigInt(nombre);
 ```
 
 > [!WARNING]
-> Il n'y a de mot-clé \verb+new+, car il s'agit d'une conversion.
+> Il n'y a de mot-clé `new`, car il s'agit d'une conversion.
 
 ###### Les méthodes statiques de `BigInt`
 
-`BigInt.asIntN(largeur, nombre)` permet d'écrêter le nombre `nombre` pour obtenir un entier signé compris entre $ 2^{\textrm{largeur} - 1} $ et $ 2^{\textrm{largeur} - 1} - 1 $.
+`BigInt.asIntN(largeur, nombre)` permet d'écrêter le nombre `nombre` pour obtenir un entier signé compris entre $2^{\textrm{largeur} - 1}$ et $2^{\textrm{largeur} - 1} - 1$.
 
-`BigInt.asUintN(largeur, nombre)` permet d'écrêter le nombre `nombre` pour obtenir un entier non signé compris entre $ 0 $ et $ 2^{\textrm{largeur} - 1} - 1 $.
+`BigInt.asUintN(largeur, nombre)` permet d'écrêter le nombre `nombre` pour obtenir un entier non signé compris entre $0$ et $2^{\textrm{largeur} - 1} - 1$.
 
 ###### Les méthodes d'instance de `BigInt`
 
@@ -994,17 +994,17 @@ Les méthodes statiques de `Math`
 
 `Math.E` $\rightarrow$ nombre de Neper $e$
 
-`Math.LN10` $\rightarrow$ $ \ln \left( 10 \right) $
+`Math.LN10` $\rightarrow$ $\ln \left( 10 \right)$
 
-`Math.LN2` $\rightarrow$ $ \ln \left( 2 \right) $
+`Math.LN2` $\rightarrow$ $\ln \left( 2 \right)$
 
-`Math.LOG10E` $\rightarrow$ $ \log \left( e \right) $
+`Math.LOG10E` $\rightarrow$ $\log \left( e \right)$
 
-`Math.LOG2E` $\rightarrow$ $ {\log}_2 \left( e \right) $
+`Math.LOG2E` $\rightarrow$ ${\log}_2 \left( e \right)$
 
 `Math.PI` $\rightarrow$ $ \pi $
 
-`Math.SQRT1_2` $\rightarrow$ $ \frac{1}{\sqrt{2}} = \frac{\sqrt{2}}{2} = \sqrt{\frac{1}{2}} $
+`Math.SQRT1_2` $\rightarrow$ $\frac{1}{\sqrt{2}} = \frac{\sqrt{2}}{2} = \sqrt{\frac{1}{2}}$
 
 `Math.SQRT2` $\rightarrow$ $\sqrt{2}$
 
@@ -1012,47 +1012,47 @@ Les méthodes statiques de `Math`
 
 `Math.sign(nombre)` $\rightarrow$ signe de $\textrm{nombre}$
 
-`Math.abs(nombre)` $\rightarrow$ $ \left| \textrm{nombre} \right| $
+`Math.abs(nombre)` $\rightarrow$ $\left| \textrm{nombre} \right|$
 
-`Math.pow(nombre, puissance)` $\rightarrow$ $ {\textrm{nombre}}^{\textrm{puissance}} $
+`Math.pow(nombre, puissance)` $\rightarrow$ ${\textrm{nombre}}^{\textrm{puissance}}$
 
-`Math.sqrt(nombre)` $\rightarrow$ $ \sqrt{\textrm{nombre}} $
+`Math.sqrt(nombre)` $\rightarrow$ $\sqrt{\textrm{nombre}}$
 
-`Math.cbrt(nombre)` $\rightarrow$ $ \sqrt[3]{\textrm{nombre}} $
+`Math.cbrt(nombre)` $\rightarrow$ $\sqrt[3]{\textrm{nombre}}$
 
-`Math.log(nombre)` $\rightarrow$ $ \ln \left( \textrm{nombre} \right) $
+`Math.log(nombre)` $\rightarrow$ $\ln \left( \textrm{nombre} \right)$
 
-`Math.log10(nombre)` $\rightarrow$ $ \log \left( \textrm{nombre} \right)$
+`Math.log10(nombre)` $\rightarrow$ $\log \left( \textrm{nombre} \right)$
 
-`Math.log2(nombre)` $\rightarrow$ $ {\log}\_2 \left( \textrm{nombre} \right) $
+`Math.log2(nombre)` $\rightarrow$ ${\log}\_2 \left( \textrm{nombre} \right)$
 
-`Math.exp(nombre)` $\rightarrow$ $ e^{\textrm{nombre}} $
+`Math.exp(nombre)` $\rightarrow$ $e^{\textrm{nombre}}$
 
-`Math.expn1(nombre)` $\rightarrow$ $ e^{\textrm{nombre}} - 1 $
+`Math.expn1(nombre)` $\rightarrow$ $e^{\textrm{nombre}} - 1$
 
 ###### Les méthodes statiques pour les fonctions trigonométriques
 
 Tous les résultats des méthodes sont par défaut en **radians**.
 
-`Math.cos(nombre)` $\rightarrow$ $ \cos \left( \textrm{nombre} \right) $
+`Math.cos(nombre)` $\rightarrow$ $\cos \left( \textrm{nombre} \right)$
 
-`Math.sin(nombre)` $\rightarrow$ $ \sin \left( \textrm{nombre} \right) $ 
+`Math.sin(nombre)` $\rightarrow$ $\sin \left( \textrm{nombre} \right)$ 
 
-`Math.tan(nombre)` $\rightarrow$ $ \tan \left( \textrm{nombre} \right) $
+`Math.tan(nombre)` $\rightarrow$ $\tan \left( \textrm{nombre} \right)$
 
-`Math.acos(nombre)` $\rightarrow$ $ \arccos \left( \textrm{nombre} \right) $
+`Math.acos(nombre)` $\rightarrow$ $\arccos \left( \textrm{nombre} \right)$
 
-`Math.asin(nombre)` $\rightarrow$ $ \arcsin \left( \textrm{nombre} \right) $
+`Math.asin(nombre)` $\rightarrow$ $\arcsin \left( \textrm{nombre} \right)$
 
-`Math.atan(nombre)` $\rightarrow$ $ \arctan \left( \textrm{nombre} \right) $
+`Math.atan(nombre)` $\rightarrow$ $\arctan \left( \textrm{nombre} \right)$
 
-`Math.acosh(nombre)` $\rightarrow$ $ \cosh \left( \textrm{nombre} \right) $
+`Math.acosh(nombre)` $\rightarrow$ $\cosh \left( \textrm{nombre} \right)$
 
-`Math.asinh(nombre)` $\rightarrow$ $ \sinh \left( \textrm{nombre} \right) $
+`Math.asinh(nombre)` $\rightarrow$ $\sinh \left( \textrm{nombre} \right)$
 
-`Math.atanh(nombre)` $\rightarrow$ $ \tanh \left( \textrm{nombre} \right) $
+`Math.atanh(nombre)` $\rightarrow$ $\tanh \left( \textrm{nombre} \right)$
 
-`Math.atan2(y, x)` fournit l'angle entre la droite passant par l'origine $\left( 0, 0 \right) $ et le point de coordonnées $ \left( x, y \right) $.
+`Math.atan2(y, x)` fournit l'angle entre la droite passant par l'origine $\left( 0, 0 \right)$ et le point de coordonnées $\left( x, y \right)$.
 
 ###### Les méthodes statiques pour gérer les arrondis
 
@@ -1070,7 +1070,7 @@ Tous les résultats des méthodes sont par défaut en **radians**.
 
 ###### Les méthodes statiques diverses
 
-`Math.random()` fournit un nombre pseudo-aléatoire dans la fourchette $ \left[ 0, 1 \right[ $ selon une distribution approximativement uniforme sur cet intervalle.
+`Math.random()` fournit un nombre pseudo-aléatoire dans la fourchette $\left[ 0, 1 \right[$ selon une distribution approximativement uniforme sur cet intervalle.
 - Le nombre obtenu doit être multiplié par un autre pour couvrir un autre intervalle.
 - Le nombre obtenu peut être manipulé avec `parseInt()` ou `parseFloat()`.
 
@@ -1179,7 +1179,7 @@ for(element in text)
 
 ###### Les méthodes d'instance de `String`
 
-- `text.char(nombre)` donne le caractère placé à la position spécifique \verb+nombre+ dans la chaîne de caractères $ \left[ 0, +\infty \right[ $. Dans le cas de \verb+text+, l'intervalle est $ \left[ 0, 4 \right] $.
+- `text.char(nombre)` donne le caractère placé à la position spécifique \verb+nombre+ dans la chaîne de caractères $\left[ 0, +\infty \right[$. Dans le cas de `text`, l'intervalle est $\left[ 0, 4 \right]$.
 
 > [!NOTE]
 > `text.chartCodeAt()` retourne le code ASCII du caractère.
@@ -1314,16 +1314,16 @@ function replaceAll(texte, caractereARemplacer, nouveauCaractere)
 
 11. Sélectionner des intervalles de caractères
 
-`text.slice(2)` sélectionne les caractères de $ \left[ 3, +\infty \right[ $.
+`text.slice(2)` sélectionne les caractères de $\left[ 3, +\infty \right[$.
 - **Résultat :** `xte`
 
-`text.slice(1, 3)` sélectionne les caractères de $ \left[ 1, 3 \right[ $.
+`text.slice(1, 3)` sélectionne les caractères de $\left[ 1, 3 \right[$.
 - **Résultat :** `ex`
 
-`text.slice(-2)` sélectionne les caractères de $ \left[ -2, -\infty \right[ $.
+`text.slice(-2)` sélectionne les caractères de $\left[ -2, -\infty \right[$.
 - **Résultat :** `te`
 
-`text.slice(-3, -2)` sélectionne les caractères de $ \left[ -3, -2 \right[ $.
+`text.slice(-3, -2)` sélectionne les caractères de $\left[ -3, -2 \right[$.
 - **Résultat :** `x`
 
 ###### Les méthodes de conversion `HTML`
